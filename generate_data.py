@@ -1,3 +1,12 @@
+# =====================================================
+# RETAIL AI PROJECT
+# HYBRID AI + TEMPLATE ARCHITECTURE
+# =====================================================
+
+# =====================================================
+# IMPORTS
+# =====================================================
+
 import os
 import random
 from datetime import datetime, timedelta
@@ -5,7 +14,7 @@ from datetime import datetime, timedelta
 import pandas as pd
 from faker import Faker
 
-# PDF generation imports
+# PDF Generation
 from reportlab.platypus import (
     SimpleDocTemplate,
     Paragraph,
@@ -15,48 +24,36 @@ from reportlab.platypus import (
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.pagesizes import letter
 
+# Gemini AI
+import google.generativeai as genai
+
 # =====================================================
 # INITIAL SETUP
 # =====================================================
 
 fake = Faker()
 
-# Create folders automatically
+# Create folders
 os.makedirs("data", exist_ok=True)
 os.makedirs("docs", exist_ok=True)
 
-print("Folders created successfully!")
+print("Project folders created successfully!")
 
 # =====================================================
-# PROMPT-ENGINEERED TEMPLATES
+# GEMINI CONFIGURATION
 # =====================================================
 
-# These prompts simulate prompt engineering concepts
-# for enterprise AI workflow projects.
+# Replace with your Gemini API Key
 
-prompts_used = {
+API_KEY = "AIzaSyCQcltWTK4EtvlnUpqnduBcos_X8jzzhko"
 
-    "customer_complaints":
-        """
-        Generate realistic retail customer complaints
-        for delayed delivery, refund issues,
-        payment failures, damaged products,
-        wrong item delivery, and app crashes.
-        """,
+genai.configure(api_key=API_KEY)
 
-    "incident_logs":
-        """
-        Generate realistic retail operational outage logs
-        related to warehouse delays, website downtime,
-        inventory mismatch, and payment gateway failures.
-        """,
+model = genai.GenerativeModel(
+    "gemini-2.5-flash"
+)
 
-    "rag_documents":
-        """
-        Generate professional retail SOP documents
-        and policy guides for customer support workflows.
-        """
-}
+print("Gemini configured successfully!")
 
 # =====================================================
 # MASTER DATA
@@ -81,9 +78,7 @@ products = [
     "Jeans",
     "Mobile Charger",
     "Bluetooth Speaker",
-    "Tablet",
-    "Wireless Mouse",
-    "Backpack"
+    "Tablet"
 ]
 
 channels = [
@@ -108,12 +103,11 @@ statuses = [
 ]
 
 locations = [
-    "Mumbai Warehouse",
-    "Delhi Store",
-    "Bengaluru Hub",
-    "Chennai Store",
-    "Pune Warehouse",
-    "Hyderabad Hub"
+    "Mumbai",
+    "Delhi",
+    "Bengaluru",
+    "Chennai",
+    "Pune"
 ]
 
 teams = [
@@ -131,162 +125,122 @@ sentiments = [
     "Satisfied"
 ]
 
+customer_tiers = [
+    "Silver",
+    "Gold",
+    "Platinum"
+]
+
+payment_methods = [
+    "UPI",
+    "Credit Card",
+    "Debit Card",
+    "Wallet"
+]
+
+delivery_partners = [
+    "Delhivery",
+    "BlueDart",
+    "Ekart",
+    "XpressBees"
+]
+
 # =====================================================
-# RETAIL COMPLAINT TEMPLATES
+# TEMPLATE-BASED COMPLAINTS
 # =====================================================
 
 complaint_templates = {
 
     "Order Delay": [
-
         "My order for {} has not been delivered yet.",
-
-        "The delivery for my {} is delayed by several days.",
-
-        "I am still waiting for my {} order.",
-
-        "Shipment tracking for my {} has not updated."
+        "Shipment tracking for my {} has not updated.",
+        "Delivery for my {} is delayed."
     ],
 
     "Wrong Item": [
-
         "I received the wrong {} in my package.",
-
-        "The delivered {} does not match my order.",
-
-        "A different item was delivered instead of {}.",
-
-        "The {} received is incorrect."
+        "Incorrect {} was delivered.",
+        "Delivered item does not match my order."
     ],
 
     "Damaged Item": [
-
         "The {} arrived damaged and unusable.",
-
-        "My {} was delivered in broken condition.",
-
-        "The packaging for {} was damaged.",
-
+        "Packaging for {} was broken.",
         "The delivered {} is defective."
     ],
 
     "Refund Issue": [
-
-        "Refund for my {} has not been credited.",
-
-        "My refund for {} is still pending.",
-
-        "I returned the {} but refund is not processed.",
-
-        "Refund status for {} has not been updated."
+        "Refund for my {} is still pending.",
+        "Refund not received for returned {}.",
+        "Refund process for {} is delayed."
     ],
 
     "Payment Issue": [
-
-        "Payment was deducted while ordering {} but order failed.",
-
-        "Transaction completed but {} order was not placed.",
-
-        "Amount deducted for {} but no order confirmation received.",
-
-        "Payment issue occurred during checkout for {}."
+        "Payment deducted for {} but order failed.",
+        "Transaction failed during {} purchase.",
+        "Amount deducted but no order confirmation received."
     ],
 
     "Cancellation Issue": [
-
-        "I cancelled my {} order but it is still active.",
-
-        "Cancellation request for {} is not processed.",
-
-        "Order cancellation failed for {}.",
-
-        "I want to cancel {} but the order is still open."
+        "Unable to cancel my {} order.",
+        "Cancellation request failed for {}.",
+        "Cancelled order is still active."
     ],
 
     "Stock Issue": [
-
-        "{} was shown available but later became out of stock.",
-
-        "Inventory issue occurred while purchasing {}.",
-
-        "{} was unavailable after order placement.",
-
-        "Stock mismatch detected for {}."
+        "{} became out of stock after ordering.",
+        "Inventory issue detected for {}.",
+        "{} unavailable after payment."
     ],
 
     "App Issue": [
-
-        "The app crashes while purchasing {}.",
-
-        "Checkout page freezes for {} order.",
-
-        "Unable to place {} order through app.",
-
-        "Retail website not responding during {} purchase."
+        "Retail app crashes during {} purchase.",
+        "Checkout page freezes while ordering {}.",
+        "Unable to place {} order through app."
     ]
 }
 
 # =====================================================
-# INCIDENT LOG TEMPLATES
+# RESOLUTION SUGGESTIONS
 # =====================================================
 
-incident_templates = {
+resolution_suggestions = {
 
-    "Payment Gateway Failure": [
+    "Order Delay":
+        "Escalate to logistics support and provide updated ETA.",
 
-        "Customers unable to complete payments due to gateway timeout.",
+    "Wrong Item":
+        "Arrange replacement pickup and warehouse verification.",
 
-        "Multiple transaction failures detected in payment service.",
+    "Damaged Item":
+        "Initiate return pickup and offer replacement/refund.",
 
-        "Payment processor latency increased significantly."
-    ],
+    "Refund Issue":
+        "Escalate to finance support and verify refund status.",
 
-    "Inventory Mismatch": [
+    "Payment Issue":
+        "Check payment gateway logs and transaction ID.",
 
-        "Inventory mismatch detected between warehouse and database.",
+    "Cancellation Issue":
+        "Verify cancellation eligibility and process request.",
 
-        "Product stock count inconsistency identified.",
+    "Stock Issue":
+        "Validate inventory sync and suggest alternatives.",
 
-        "Warehouse inventory sync issue detected."
-    ],
-
-    "Website Downtime": [
-
-        "Retail website unavailable during peak traffic.",
-
-        "Checkout service temporarily down.",
-
-        "Frontend application outage detected."
-    ],
-
-    "Warehouse Delay": [
-
-        "Warehouse dispatch delayed due to operational backlog.",
-
-        "Shipment processing queue increased significantly.",
-
-        "Packaging workflow delay reported."
-    ],
-
-    "Delivery Partner Delay": [
-
-        "Courier partner experiencing shipment delays.",
-
-        "Last-mile delivery delays reported in multiple cities.",
-
-        "Logistics network disruption detected."
-    ]
+    "App Issue":
+        "Escalate to technical support for debugging."
 }
 
 # =====================================================
 # GENERATE RETAIL TICKETS
+# TEMPLATE-BASED (SAVES API QUOTA)
 # =====================================================
 
-print("Generating retail tickets...")
+print("Generating retail ticket dataset...")
 
 ticket_rows = []
 
-for i in range(1, 301):
+for i in range(1, 151):
 
     issue_type = random.choice(issue_types)
 
@@ -296,6 +250,8 @@ for i in range(1, 301):
         complaint_templates[issue_type]
     ).format(product)
 
+    city = random.choice(locations)
+
     created_time = datetime.now() - timedelta(
         days=random.randint(0, 30),
         hours=random.randint(0, 23)
@@ -304,7 +260,7 @@ for i in range(1, 301):
     ticket_rows.append({
 
         "ticket_id":
-            f"TKT{i:04}",
+            f"{city[:3].upper()}-TKT{i:04}",
 
         "customer_id":
             f"CUST{random.randint(1000,9999)}",
@@ -327,11 +283,20 @@ for i in range(1, 301):
         "customer_sentiment":
             random.choice(sentiments),
 
+        "customer_tier":
+            random.choice(customer_tiers),
+
+        "payment_method":
+            random.choice(payment_methods),
+
+        "delivery_partner":
+            random.choice(delivery_partners),
+
         "channel":
             random.choice(channels),
 
         "location":
-            random.choice(locations),
+            city,
 
         "assigned_team":
             random.choice(teams),
@@ -345,43 +310,74 @@ for i in range(1, 301):
         "sla_breach":
             random.choice(["Yes", "No"]),
 
+        "resolution_time_hours":
+            random.randint(1, 72),
+
+        "resolution_suggestion":
+            resolution_suggestions[issue_type],
+
         "created_at":
             created_time.strftime("%Y-%m-%d %H:%M:%S")
     })
 
-# Convert to DataFrame
 tickets_df = pd.DataFrame(ticket_rows)
 
-# Save CSV
 tickets_df.to_csv(
     "data/retail_tickets.csv",
     index=False
 )
 
-print("Retail tickets generated successfully!")
+print("Retail ticket dataset generated!")
 
 # =====================================================
-# GENERATE INCIDENT LOGS
+# TEMPLATE-BASED INCIDENT LOGS
 # =====================================================
+
+incident_templates = {
+
+    "Payment Gateway Failure": [
+        "Payment gateway latency increased during peak traffic.",
+        "High transaction failure rate detected.",
+        "Customers unable to complete payments."
+    ],
+
+    "Inventory Mismatch": [
+        "Warehouse inventory sync issue detected.",
+        "Stock inconsistency identified.",
+        "Inventory mismatch between systems."
+    ],
+
+    "Website Downtime": [
+        "Retail website unavailable during peak hours.",
+        "Checkout service outage detected.",
+        "Frontend application temporarily down."
+    ],
+
+    "Warehouse Delay": [
+        "Shipment processing backlog detected.",
+        "Warehouse operational delays increased.",
+        "Dispatch workflow delayed."
+    ],
+
+    "Delivery Partner Delay": [
+        "Courier network disruption identified.",
+        "Shipment ETA increased.",
+        "Logistics delays reported."
+    ]
+}
 
 print("Generating incident logs...")
 
-incident_types = [
-    "Payment Gateway Failure",
-    "Inventory Mismatch",
-    "Website Downtime",
-    "Warehouse Delay",
-    "Delivery Partner Delay"
-]
-
 incident_rows = []
 
-for i in range(1, 91):
+incident_types = list(
+    incident_templates.keys()
+)
 
-    incident_type = random.choice(incident_types)
+for i in range(1, 31):
 
-    description = random.choice(
-        incident_templates[incident_type]
+    incident_type = random.choice(
+        incident_types
     )
 
     incident_rows.append({
@@ -412,7 +408,9 @@ for i in range(1, 91):
             random.choice(["Yes", "No"]),
 
         "description":
-            description,
+            random.choice(
+                incident_templates[incident_type]
+            ),
 
         "timestamp":
             (
@@ -422,86 +420,129 @@ for i in range(1, 91):
             ).strftime("%Y-%m-%d %H:%M:%S")
     })
 
-# Convert to DataFrame
-incident_df = pd.DataFrame(incident_rows)
+incident_df = pd.DataFrame(
+    incident_rows
+)
 
-# Save CSV
 incident_df.to_csv(
     "data/retail_incident_logs.csv",
     index=False
 )
 
-print("Retail incident logs generated successfully!")
+print("Incident logs generated!")
 
 # =====================================================
-# RAG DOCUMENT CONTENT
+# AI-BASED SOP DOCUMENT GENERATION
+# ONLY 4 API CALLS → LOW COST
 # =====================================================
 
-refund_policy = """
-RETAIL REFUND POLICY
+document_prompts = {
 
-1. Refunds should be processed within 5 business days.
+    "refund_policy":
+    """
+    Generate a professional enterprise retail refund policy.
 
-2. Refunds delayed beyond 7 days must be escalated
-to finance support.
+    Include:
+    - document control
+    - purpose
+    - scope
+    - workflow
+    - SLA
+    - escalation rules
+    - audit requirements
+    - customer communication
 
-3. Returned products must pass quality verification.
+    Make it detailed and enterprise-grade.
+    """,
 
-4. Damaged products are eligible for replacement
-or refund.
+    "damaged_item_sop":
+    """
+    Generate a professional damaged item handling SOP
+    for retail support operations.
 
-5. All refund requests require valid order ID
-and payment reference.
-"""
+    Include:
+    - verification process
+    - warehouse coordination
+    - replacement workflow
+    - escalation rules
+    - SLA requirements
+    - audit logging
 
-damaged_item_sop = """
-DAMAGED ITEM HANDLING SOP
+    Make it company-level and detailed.
+    """,
 
-1. Verify customer complaint images.
+    "payment_failure_guide":
+    """
+    Generate a professional payment failure
+    escalation guide.
 
-2. Confirm order details and shipment information.
+    Include:
+    - transaction verification
+    - gateway troubleshooting
+    - escalation workflow
+    - SLA requirements
+    - customer communication
+    - monitoring and reporting
 
-3. Arrange return pickup within 48 hours.
+    Make it enterprise-grade.
+    """,
 
-4. Offer replacement if inventory is available.
+    "order_delay_sop":
+    """
+    Generate a professional order delay
+    troubleshooting guide.
 
-5. Escalate repeated complaints to warehouse operations.
-"""
+    Include:
+    - shipment validation
+    - logistics coordination
+    - delay investigation
+    - escalation process
+    - SLA requirements
+    - customer communication
 
-payment_failure_guide = """
-PAYMENT FAILURE ESCALATION GUIDE
-
-1. Verify transaction ID and payment status.
-
-2. Check payment gateway logs for failures.
-
-3. Escalate unresolved payment failures.
-
-4. Notify finance and customer support teams.
-
-5. Monitor recurring payment outage incidents.
-"""
-
-order_delay_sop = """
-ORDER DELAY TROUBLESHOOTING GUIDE
-
-1. Verify shipment tracking information.
-
-2. Confirm warehouse dispatch status.
-
-3. Escalate long delivery delays to logistics team.
-
-4. Provide revised ETA to customer.
-
-5. Monitor repeated courier partner delays.
-"""
-
-documents = {
-    "refund_policy": refund_policy,
-    "damaged_item_sop": damaged_item_sop,
-    "payment_failure_guide": payment_failure_guide,
-    "order_delay_sop": order_delay_sop
+    Make it detailed and professional.
+    """
 }
+
+# =====================================================
+# GENERATE DOCUMENTS USING GEMINI
+# =====================================================
+
+print("Generating AI-based SOP documents...")
+
+documents = {}
+
+for doc_name, prompt in document_prompts.items():
+
+    try:
+
+        print(f"Generating {doc_name}...")
+
+        response = model.generate_content(
+            prompt
+        )
+
+        documents[doc_name] = response.text
+
+        print(f"{doc_name} generated successfully!")
+
+    except Exception as e:
+
+        print(
+            f"Gemini failed for {doc_name}"
+        )
+
+        print(e)
+
+        # Fallback
+        documents[doc_name] = f"""
+        {doc_name}
+
+        AI generation failed.
+        Fallback document generated.
+        """
+
+print("All SOP documents generated!")
 
 # =====================================================
 # PDF CREATION FUNCTION
@@ -518,7 +559,6 @@ def create_pdf(file_path, title, content):
 
     story = []
 
-    # Title
     title_para = Paragraph(
         f"<b>{title}</b>",
         styles['Title']
@@ -528,7 +568,6 @@ def create_pdf(file_path, title, content):
 
     story.append(Spacer(1, 12))
 
-    # Content
     paragraphs = content.split("\n")
 
     for para in paragraphs:
@@ -547,14 +586,13 @@ def create_pdf(file_path, title, content):
     doc.build(story)
 
 # =====================================================
-# GENERATE TXT + PDF DOCUMENTS
+# GENERATE TXT + PDF FILES
 # =====================================================
 
-print("Generating RAG documents...")
+print("Generating TXT and PDF files...")
 
 for file_name, content in documents.items():
 
-    # Save TXT
     txt_path = f"docs/{file_name}.txt"
 
     with open(
@@ -565,7 +603,6 @@ for file_name, content in documents.items():
 
         f.write(content)
 
-    # Save PDF
     pdf_path = f"docs/{file_name}.pdf"
 
     create_pdf(
@@ -574,7 +611,7 @@ for file_name, content in documents.items():
         content
     )
 
-print("TXT and PDF documents generated successfully!")
+print("Documents generated successfully!")
 
 # =====================================================
 # DATA QUALITY CHECKS
@@ -582,19 +619,16 @@ print("TXT and PDF documents generated successfully!")
 
 print("\n========== DATA QUALITY CHECK ==========\n")
 
-# Missing values
 print("Missing Values:\n")
 
 print(tickets_df.isnull().sum())
 
-# Duplicate ticket IDs
 print("\nDuplicate Ticket IDs:")
 
 print(
     tickets_df["ticket_id"].duplicated().sum()
 )
 
-# Duplicate incident IDs
 print("\nDuplicate Incident Log IDs:")
 
 print(
@@ -604,39 +638,36 @@ print(
 print("\nData quality checks completed!")
 
 # =====================================================
-# README FILE
+# AI-GENERATED README
 # =====================================================
 
-readme_content = """
-RETAIL AI PROJECT
+readme_prompt = """
+Generate a professional README.md
+for an AI-Based Retail Incident
+Ticket Analyzer project.
 
-PROJECT OVERVIEW
-----------------
-This project generates synthetic retail support datasets,
-incident logs, and RAG knowledge documents for an
-AI-powered retail support workflow.
-
-GENERATED FILES
----------------
-1. retail_tickets.csv
-2. retail_incident_logs.csv
-3. PDF SOP Documents
-
-FEATURES
---------
-- Synthetic ticket generation
-- Operational outage simulation
-- PDF document generation
-- Prompt-engineered templates
-- Data quality checks
-
-USE CASES
----------
-- Ticket Classification Agent
-- Severity Detection Agent
-- RAG Resolution Workflow
-- Human Approval Workflow
+Include:
+- project overview
+- features
+- generated files
+- technologies used
+- workflow explanation
+- use cases
 """
+
+try:
+
+    response = model.generate_content(
+        readme_prompt
+    )
+
+    readme_content = response.text
+
+except:
+
+    readme_content = """
+    RETAIL AI PROJECT
+    """
 
 with open(
     "README.md",
@@ -646,10 +677,10 @@ with open(
 
     f.write(readme_content)
 
-print("README.md created successfully!")
+print("README.md generated successfully!")
 
 # =====================================================
-# DISPLAY SAMPLE OUTPUT
+# SAMPLE OUTPUT
 # =====================================================
 
 print("\n========== SAMPLE RETAIL TICKETS ==========\n")

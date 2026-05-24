@@ -1,91 +1,31 @@
 log_id,incident_type,severity,location,affected_team,system_status,requires_immediate_action,description,timestamp
-LOG001,Warehouse Delay,High,Bengaluru Hub,Technical Support,Partially Down,Yes,Packaging workflow delay reported.,2026-05-20 11:03:07
-LOG002,Payment Gateway Failure,Critical,Mumbai Warehouse,Customer Support,Down,Yes,Multiple transaction failures detected in payment service.,2026-05-21 18:03:07
-LOG003,Payment Gateway Failure,Medium,Pune Warehouse,Logistics Team,Partially Down,No,Multiple transaction failures detected in payment service.,2026-05-20 20:03:07
-LOG004,Website Downtime,Critical,Chennai Store,Warehouse Operations,Operational,Yes,Checkout service temporarily down.,2026-05-24 08:03:07
-LOG005,Payment Gateway Failure,Low,Hyderabad Hub,Customer Support,Down,No,Payment processor latency increased significantly.,2026-05-20 20:03:07
-LOG006,Website Downtime,High,Mumbai Warehouse,Technical Support,Partially Down,Yes,Retail website unavailable during peak traffic.,2026-05-23 14:03:07
-LOG007,Website Downtime,Medium,Bengaluru Hub,Logistics Team,Partially Down,Yes,Retail website unavailable during peak traffic.,2026-05-23 20:03:07
-LOG008,Inventory Mismatch,Critical,Delhi Store,Payment Support,Operational,Yes,Inventory mismatch detected between warehouse and database.,2026-05-21 10:03:07
-LOG009,Payment Gateway Failure,Low,Mumbai Warehouse,Payment Support,Down,No,Payment processor latency increased significantly.,2026-05-23 23:03:07
-LOG010,Warehouse Delay,Medium,Hyderabad Hub,Technical Support,Down,No,Warehouse dispatch delayed due to operational backlog.,2026-05-22 19:03:07
-LOG011,Warehouse Delay,Critical,Pune Warehouse,Warehouse Operations,Operational,No,Shipment processing queue increased significantly.,2026-05-24 08:03:07
-LOG012,Inventory Mismatch,Medium,Chennai Store,Technical Support,Down,Yes,Product stock count inconsistency identified.,2026-05-20 17:03:07
-LOG013,Inventory Mismatch,Critical,Delhi Store,Technical Support,Down,Yes,Inventory mismatch detected between warehouse and database.,2026-05-21 02:03:07
-LOG014,Delivery Partner Delay,Low,Chennai Store,Warehouse Operations,Partially Down,No,Courier partner experiencing shipment delays.,2026-05-22 14:03:07
-LOG015,Website Downtime,Low,Delhi Store,Logistics Team,Operational,No,Frontend application outage detected.,2026-05-20 21:03:07
-LOG016,Warehouse Delay,Medium,Bengaluru Hub,Logistics Team,Down,No,Warehouse dispatch delayed due to operational backlog.,2026-05-22 21:03:07
-LOG017,Warehouse Delay,Critical,Chennai Store,Warehouse Operations,Operational,Yes,Warehouse dispatch delayed due to operational backlog.,2026-05-24 01:03:07
-LOG018,Inventory Mismatch,Critical,Mumbai Warehouse,Payment Support,Partially Down,Yes,Warehouse inventory sync issue detected.,2026-05-20 11:03:07
-LOG019,Inventory Mismatch,Critical,Delhi Store,Customer Support,Down,Yes,Product stock count inconsistency identified.,2026-05-23 12:03:07
-LOG020,Delivery Partner Delay,Critical,Mumbai Warehouse,Customer Support,Partially Down,No,Last-mile delivery delays reported in multiple cities.,2026-05-21 20:03:07
-LOG021,Warehouse Delay,Critical,Pune Warehouse,Logistics Team,Down,No,Shipment processing queue increased significantly.,2026-05-24 08:03:07
-LOG022,Warehouse Delay,High,Mumbai Warehouse,Payment Support,Operational,No,Shipment processing queue increased significantly.,2026-05-21 20:03:07
-LOG023,Payment Gateway Failure,Critical,Mumbai Warehouse,Logistics Team,Operational,Yes,Customers unable to complete payments due to gateway timeout.,2026-05-22 20:03:07
-LOG024,Website Downtime,Low,Hyderabad Hub,Payment Support,Operational,Yes,Checkout service temporarily down.,2026-05-20 08:03:07
-LOG025,Warehouse Delay,Critical,Chennai Store,Payment Support,Partially Down,Yes,Warehouse dispatch delayed due to operational backlog.,2026-05-23 16:03:07
-LOG026,Warehouse Delay,High,Hyderabad Hub,Technical Support,Down,No,Packaging workflow delay reported.,2026-05-21 02:03:07
-LOG027,Website Downtime,Medium,Pune Warehouse,Warehouse Operations,Down,Yes,Checkout service temporarily down.,2026-05-23 17:03:07
-LOG028,Website Downtime,Medium,Pune Warehouse,Logistics Team,Down,No,Retail website unavailable during peak traffic.,2026-05-21 05:03:07
-LOG029,Warehouse Delay,High,Bengaluru Hub,Payment Support,Operational,Yes,Warehouse dispatch delayed due to operational backlog.,2026-05-20 16:03:07
-LOG030,Delivery Partner Delay,Medium,Chennai Store,Technical Support,Operational,Yes,Logistics network disruption detected.,2026-05-23 10:03:07
-LOG031,Inventory Mismatch,Critical,Mumbai Warehouse,Customer Support,Down,Yes,Product stock count inconsistency identified.,2026-05-23 11:03:07
-LOG032,Delivery Partner Delay,Medium,Hyderabad Hub,Logistics Team,Operational,Yes,Courier partner experiencing shipment delays.,2026-05-21 08:03:07
-LOG033,Payment Gateway Failure,Low,Pune Warehouse,Payment Support,Partially Down,Yes,Customers unable to complete payments due to gateway timeout.,2026-05-24 07:03:07
-LOG034,Inventory Mismatch,Low,Pune Warehouse,Technical Support,Partially Down,No,Warehouse inventory sync issue detected.,2026-05-20 11:03:07
-LOG035,Payment Gateway Failure,Low,Delhi Store,Technical Support,Operational,No,Multiple transaction failures detected in payment service.,2026-05-23 04:03:07
-LOG036,Payment Gateway Failure,High,Chennai Store,Warehouse Operations,Operational,No,Multiple transaction failures detected in payment service.,2026-05-21 23:03:07
-LOG037,Inventory Mismatch,Critical,Pune Warehouse,Payment Support,Operational,Yes,Product stock count inconsistency identified.,2026-05-21 16:03:07
-LOG038,Warehouse Delay,Low,Bengaluru Hub,Technical Support,Partially Down,Yes,Warehouse dispatch delayed due to operational backlog.,2026-05-23 14:03:07
-LOG039,Website Downtime,High,Bengaluru Hub,Logistics Team,Operational,No,Checkout service temporarily down.,2026-05-24 06:03:07
-LOG040,Delivery Partner Delay,Low,Bengaluru Hub,Customer Support,Operational,No,Logistics network disruption detected.,2026-05-20 23:03:07
-LOG041,Inventory Mismatch,Critical,Chennai Store,Warehouse Operations,Operational,Yes,Product stock count inconsistency identified.,2026-05-22 13:03:07
-LOG042,Warehouse Delay,Medium,Chennai Store,Payment Support,Down,No,Shipment processing queue increased significantly.,2026-05-24 07:03:07
-LOG043,Inventory Mismatch,Medium,Hyderabad Hub,Payment Support,Operational,Yes,Product stock count inconsistency identified.,2026-05-21 22:03:07
-LOG044,Warehouse Delay,Low,Bengaluru Hub,Payment Support,Operational,No,Packaging workflow delay reported.,2026-05-20 13:03:07
-LOG045,Inventory Mismatch,High,Hyderabad Hub,Logistics Team,Down,No,Product stock count inconsistency identified.,2026-05-23 17:03:07
-LOG046,Payment Gateway Failure,Low,Delhi Store,Logistics Team,Operational,Yes,Payment processor latency increased significantly.,2026-05-23 21:03:07
-LOG047,Warehouse Delay,Low,Chennai Store,Warehouse Operations,Operational,No,Warehouse dispatch delayed due to operational backlog.,2026-05-21 03:03:07
-LOG048,Payment Gateway Failure,Critical,Bengaluru Hub,Logistics Team,Partially Down,Yes,Multiple transaction failures detected in payment service.,2026-05-23 17:03:07
-LOG049,Warehouse Delay,High,Delhi Store,Warehouse Operations,Down,No,Packaging workflow delay reported.,2026-05-22 13:03:07
-LOG050,Payment Gateway Failure,Low,Pune Warehouse,Technical Support,Partially Down,No,Payment processor latency increased significantly.,2026-05-23 08:03:07
-LOG051,Payment Gateway Failure,High,Mumbai Warehouse,Payment Support,Down,No,Payment processor latency increased significantly.,2026-05-21 16:03:07
-LOG052,Website Downtime,Critical,Bengaluru Hub,Payment Support,Partially Down,No,Frontend application outage detected.,2026-05-23 06:03:07
-LOG053,Inventory Mismatch,High,Chennai Store,Logistics Team,Down,No,Warehouse inventory sync issue detected.,2026-05-23 03:03:07
-LOG054,Website Downtime,Critical,Chennai Store,Payment Support,Down,Yes,Checkout service temporarily down.,2026-05-21 05:03:07
-LOG055,Warehouse Delay,Critical,Hyderabad Hub,Technical Support,Down,No,Warehouse dispatch delayed due to operational backlog.,2026-05-23 05:03:07
-LOG056,Payment Gateway Failure,Medium,Hyderabad Hub,Customer Support,Down,No,Payment processor latency increased significantly.,2026-05-24 07:03:07
-LOG057,Payment Gateway Failure,Low,Hyderabad Hub,Technical Support,Down,Yes,Payment processor latency increased significantly.,2026-05-21 23:03:07
-LOG058,Payment Gateway Failure,Medium,Delhi Store,Payment Support,Partially Down,Yes,Customers unable to complete payments due to gateway timeout.,2026-05-21 00:03:07
-LOG059,Website Downtime,Medium,Mumbai Warehouse,Technical Support,Down,Yes,Frontend application outage detected.,2026-05-23 09:03:07
-LOG060,Website Downtime,High,Bengaluru Hub,Payment Support,Partially Down,No,Checkout service temporarily down.,2026-05-22 09:03:07
-LOG061,Inventory Mismatch,High,Hyderabad Hub,Payment Support,Operational,Yes,Inventory mismatch detected between warehouse and database.,2026-05-21 00:03:07
-LOG062,Warehouse Delay,High,Mumbai Warehouse,Warehouse Operations,Operational,No,Shipment processing queue increased significantly.,2026-05-22 05:03:07
-LOG063,Delivery Partner Delay,High,Bengaluru Hub,Warehouse Operations,Down,Yes,Courier partner experiencing shipment delays.,2026-05-20 09:03:07
-LOG064,Payment Gateway Failure,Low,Hyderabad Hub,Technical Support,Partially Down,No,Payment processor latency increased significantly.,2026-05-22 21:03:07
-LOG065,Website Downtime,High,Pune Warehouse,Technical Support,Partially Down,No,Retail website unavailable during peak traffic.,2026-05-23 20:03:07
-LOG066,Website Downtime,High,Chennai Store,Customer Support,Down,Yes,Frontend application outage detected.,2026-05-21 05:03:07
-LOG067,Website Downtime,High,Mumbai Warehouse,Technical Support,Partially Down,Yes,Checkout service temporarily down.,2026-05-22 20:03:07
-LOG068,Inventory Mismatch,Low,Pune Warehouse,Payment Support,Down,Yes,Product stock count inconsistency identified.,2026-05-21 19:03:07
-LOG069,Inventory Mismatch,Critical,Mumbai Warehouse,Payment Support,Down,No,Product stock count inconsistency identified.,2026-05-23 16:03:07
-LOG070,Payment Gateway Failure,Low,Delhi Store,Warehouse Operations,Partially Down,Yes,Customers unable to complete payments due to gateway timeout.,2026-05-20 08:03:07
-LOG071,Website Downtime,High,Mumbai Warehouse,Payment Support,Down,No,Checkout service temporarily down.,2026-05-22 06:03:07
-LOG072,Delivery Partner Delay,Medium,Chennai Store,Technical Support,Partially Down,No,Courier partner experiencing shipment delays.,2026-05-22 08:03:07
-LOG073,Website Downtime,Low,Chennai Store,Customer Support,Down,No,Frontend application outage detected.,2026-05-20 11:03:07
-LOG074,Delivery Partner Delay,High,Delhi Store,Technical Support,Operational,No,Logistics network disruption detected.,2026-05-21 03:03:07
-LOG075,Payment Gateway Failure,Low,Hyderabad Hub,Logistics Team,Operational,Yes,Payment processor latency increased significantly.,2026-05-20 19:03:07
-LOG076,Delivery Partner Delay,Low,Bengaluru Hub,Customer Support,Partially Down,Yes,Logistics network disruption detected.,2026-05-24 08:03:07
-LOG077,Delivery Partner Delay,Low,Pune Warehouse,Payment Support,Partially Down,Yes,Logistics network disruption detected.,2026-05-21 00:03:07
-LOG078,Delivery Partner Delay,Critical,Mumbai Warehouse,Warehouse Operations,Operational,Yes,Courier partner experiencing shipment delays.,2026-05-23 06:03:07
-LOG079,Delivery Partner Delay,Medium,Hyderabad Hub,Customer Support,Operational,No,Last-mile delivery delays reported in multiple cities.,2026-05-20 17:03:07
-LOG080,Payment Gateway Failure,High,Chennai Store,Customer Support,Operational,Yes,Payment processor latency increased significantly.,2026-05-23 23:03:07
-LOG081,Warehouse Delay,Low,Bengaluru Hub,Warehouse Operations,Partially Down,Yes,Packaging workflow delay reported.,2026-05-20 20:03:07
-LOG082,Warehouse Delay,Critical,Chennai Store,Warehouse Operations,Partially Down,Yes,Warehouse dispatch delayed due to operational backlog.,2026-05-22 20:03:07
-LOG083,Delivery Partner Delay,High,Chennai Store,Payment Support,Operational,No,Last-mile delivery delays reported in multiple cities.,2026-05-21 07:03:07
-LOG084,Website Downtime,Medium,Hyderabad Hub,Payment Support,Partially Down,Yes,Checkout service temporarily down.,2026-05-21 02:03:07
-LOG085,Payment Gateway Failure,Low,Chennai Store,Warehouse Operations,Operational,No,Payment processor latency increased significantly.,2026-05-21 20:03:07
-LOG086,Delivery Partner Delay,Medium,Delhi Store,Logistics Team,Operational,No,Last-mile delivery delays reported in multiple cities.,2026-05-20 20:03:07
-LOG087,Warehouse Delay,High,Mumbai Warehouse,Payment Support,Partially Down,No,Shipment processing queue increased significantly.,2026-05-21 02:03:07
-LOG088,Delivery Partner Delay,Medium,Pune Warehouse,Logistics Team,Down,Yes,Courier partner experiencing shipment delays.,2026-05-21 18:03:07
-LOG089,Website Downtime,High,Hyderabad Hub,Customer Support,Partially Down,Yes,Retail website unavailable during peak traffic.,2026-05-23 19:03:07
-LOG090,Delivery Partner Delay,High,Chennai Store,Warehouse Operations,Down,No,Courier partner experiencing shipment delays.,2026-05-22 20:03:07
+LOG001,Delivery Partner Delay,High,Chennai,Payment Support,Down,Yes,Shipment ETA increased.,2026-05-22 13:08:26
+LOG002,Delivery Partner Delay,Medium,Bengaluru,Technical Support,Down,Yes,Shipment ETA increased.,2026-05-22 02:08:26
+LOG003,Inventory Mismatch,Low,Chennai,Payment Support,Operational,No,Warehouse inventory sync issue detected.,2026-05-24 06:08:26
+LOG004,Warehouse Delay,Medium,Delhi,Customer Support,Operational,No,Dispatch workflow delayed.,2026-05-24 04:08:26
+LOG005,Warehouse Delay,Critical,Pune,Payment Support,Operational,Yes,Shipment processing backlog detected.,2026-05-24 10:08:26
+LOG006,Delivery Partner Delay,Critical,Mumbai,Logistics Team,Operational,Yes,Courier network disruption identified.,2026-05-23 16:08:26
+LOG007,Delivery Partner Delay,Critical,Mumbai,Warehouse Operations,Operational,No,Logistics delays reported.,2026-05-22 09:08:26
+LOG008,Warehouse Delay,High,Pune,Warehouse Operations,Operational,No,Dispatch workflow delayed.,2026-05-24 07:08:26
+LOG009,Payment Gateway Failure,Low,Delhi,Payment Support,Partially Down,No,High transaction failure rate detected.,2026-05-22 13:08:26
+LOG010,Payment Gateway Failure,High,Mumbai,Logistics Team,Partially Down,Yes,Customers unable to complete payments.,2026-05-21 07:08:26
+LOG011,Delivery Partner Delay,Medium,Chennai,Technical Support,Operational,Yes,Courier network disruption identified.,2026-05-22 23:08:26
+LOG012,Warehouse Delay,High,Chennai,Warehouse Operations,Partially Down,Yes,Dispatch workflow delayed.,2026-05-21 00:08:26
+LOG013,Warehouse Delay,Medium,Bengaluru,Technical Support,Down,No,Warehouse operational delays increased.,2026-05-22 03:08:26
+LOG014,Payment Gateway Failure,Critical,Delhi,Payment Support,Operational,No,High transaction failure rate detected.,2026-05-21 04:08:26
+LOG015,Warehouse Delay,High,Chennai,Warehouse Operations,Operational,No,Warehouse operational delays increased.,2026-05-23 02:08:26
+LOG016,Delivery Partner Delay,Medium,Delhi,Customer Support,Operational,No,Courier network disruption identified.,2026-05-22 23:08:26
+LOG017,Website Downtime,High,Bengaluru,Warehouse Operations,Down,No,Frontend application temporarily down.,2026-05-22 06:08:26
+LOG018,Website Downtime,Medium,Chennai,Payment Support,Operational,Yes,Frontend application temporarily down.,2026-05-22 18:08:26
+LOG019,Inventory Mismatch,Low,Pune,Technical Support,Down,Yes,Stock inconsistency identified.,2026-05-22 00:08:26
+LOG020,Payment Gateway Failure,Low,Pune,Customer Support,Down,Yes,Customers unable to complete payments.,2026-05-23 17:08:26
+LOG021,Payment Gateway Failure,High,Mumbai,Payment Support,Down,No,High transaction failure rate detected.,2026-05-24 12:08:26
+LOG022,Delivery Partner Delay,Medium,Chennai,Customer Support,Partially Down,Yes,Logistics delays reported.,2026-05-22 12:08:26
+LOG023,Delivery Partner Delay,Medium,Delhi,Warehouse Operations,Partially Down,No,Logistics delays reported.,2026-05-21 02:08:26
+LOG024,Warehouse Delay,Medium,Pune,Payment Support,Operational,Yes,Dispatch workflow delayed.,2026-05-22 13:08:26
+LOG025,Payment Gateway Failure,High,Bengaluru,Payment Support,Partially Down,Yes,High transaction failure rate detected.,2026-05-22 14:08:26
+LOG026,Payment Gateway Failure,Critical,Mumbai,Logistics Team,Operational,Yes,Customers unable to complete payments.,2026-05-23 01:08:26
+LOG027,Inventory Mismatch,Medium,Delhi,Technical Support,Down,No,Warehouse inventory sync issue detected.,2026-05-24 03:08:26
+LOG028,Warehouse Delay,Critical,Chennai,Technical Support,Operational,No,Dispatch workflow delayed.,2026-05-22 11:08:26
+LOG029,Inventory Mismatch,High,Chennai,Technical Support,Partially Down,Yes,Stock inconsistency identified.,2026-05-24 15:08:26
+LOG030,Payment Gateway Failure,High,Pune,Technical Support,Partially Down,Yes,High transaction failure rate detected.,2026-05-24 08:08:26
