@@ -1,0 +1,302 @@
+[
+    {
+        "log_id":"LOG000",
+        "incident_type":"Digital Signage Network Outage",
+        "description":"The centralized digital signage network across the entire Northeast region (50+ stores) is displaying blank screens or outdated promotional content. Remote content deployment is failing.",
+        "severity":"Medium",
+        "location":"Mumbai",
+        "affected_team":"Technical Support",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-20 21:41:16"
+    },
+    {
+        "log_id":"LOG001",
+        "incident_type":"Digital Signage Network Outage",
+        "description":"The centralized digital signage network across the entire Northeast region (50+ stores) is displaying blank screens or outdated promotional content. Remote content deployment is failing.",
+        "severity":"Medium",
+        "location":"Mumbai",
+        "affected_team":"Warehouse Operations",
+        "system_status":"Down",
+        "timestamp":"2026-05-23 19:41:16"
+    },
+    {
+        "log_id":"LOG002",
+        "incident_type":"Store Network Connectivity Loss",
+        "description":"Store #789 experienced a complete loss of internet and internal network connectivity, disabling all critical systems including POS, back-office, WiFi, and VoIP services. Store operations are suspended.",
+        "severity":"Critical",
+        "location":"Pune",
+        "affected_team":"Technical Support",
+        "system_status":"Operational",
+        "timestamp":"2026-05-24 06:41:16"
+    },
+    {
+        "log_id":"LOG003",
+        "incident_type":"Warehouse Management System (WMS) Discrepancy",
+        "description":"WMS in Distribution Center #3 is experiencing data synchronization issues, leading to significant inventory discrepancies between physical stock and system records. This impacts order fulfillment accuracy.",
+        "severity":"High",
+        "location":"Pune",
+        "affected_team":"Warehouse Operations",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-21 10:41:16"
+    },
+    {
+        "log_id":"LOG004",
+        "incident_type":"Returns Processing System Interruption",
+        "description":"The backend system supporting customer returns and exchanges is intermittently failing to process transactions in all stores. This is leading to significant queues and customer dissatisfaction at service desks.",
+        "severity":"Medium",
+        "location":"Pune",
+        "affected_team":"Payment Support",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-23 06:41:16"
+    },
+    {
+        "log_id":"LOG005",
+        "incident_type":"E-commerce Platform Performance Degradation",
+        "description":"The enterprise e-commerce website (www.retailcorp.com) is exhibiting severe performance degradation, including extended page load times and intermittent HTTP 503 errors, particularly during peak traffic hours.",
+        "severity":"High",
+        "location":"Chennai",
+        "affected_team":"Warehouse Operations",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-22 12:41:16"
+    },
+    {
+        "log_id":"LOG006",
+        "incident_type":"E-commerce Platform Performance Degradation",
+        "description":"The enterprise e-commerce website (www.retailcorp.com) is exhibiting severe performance degradation, including extended page load times and intermittent HTTP 503 errors, particularly during peak traffic hours.",
+        "severity":"High",
+        "location":"Delhi",
+        "affected_team":"Technical Support",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-23 12:41:16"
+    },
+    {
+        "log_id":"LOG007",
+        "incident_type":"Inbound Logistics Delay",
+        "description":"Truck MT456, transporting critical inventory for the Western region distribution center, suffered a mechanical breakdown on I-5. Estimated delivery delay is 12-18 hours, impacting planned replenishment for 15 stores.",
+        "severity":"High",
+        "location":"Chennai",
+        "affected_team":"Technical Support",
+        "system_status":"Operational",
+        "timestamp":"2026-05-23 18:41:16"
+    },
+    {
+        "log_id":"LOG008",
+        "incident_type":"Payment Terminal Malfunction (In-Store)",
+        "description":"Store #012 reported that 7 out of 10 PIN pad terminals are unresponsive or failing to process EMV chip and NFC payments. Customers are experiencing significant delays and transaction failures.",
+        "severity":"High",
+        "location":"Delhi",
+        "affected_team":"Warehouse Operations",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-24 05:41:16"
+    },
+    {
+        "log_id":"LOG009",
+        "incident_type":"Returns Processing System Interruption",
+        "description":"The backend system supporting customer returns and exchanges is intermittently failing to process transactions in all stores. This is leading to significant queues and customer dissatisfaction at service desks.",
+        "severity":"Medium",
+        "location":"Chennai",
+        "affected_team":"Logistics Team",
+        "system_status":"Operational",
+        "timestamp":"2026-05-22 23:41:16"
+    },
+    {
+        "log_id":"LOG010",
+        "incident_type":"Returns Processing System Interruption",
+        "description":"The backend system supporting customer returns and exchanges is intermittently failing to process transactions in all stores. This is leading to significant queues and customer dissatisfaction at service desks.",
+        "severity":"Medium",
+        "location":"Pune",
+        "affected_team":"Logistics Team",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-23 08:41:16"
+    },
+    {
+        "log_id":"LOG011",
+        "incident_type":"Inbound Logistics Delay",
+        "description":"Truck MT456, transporting critical inventory for the Western region distribution center, suffered a mechanical breakdown on I-5. Estimated delivery delay is 12-18 hours, impacting planned replenishment for 15 stores.",
+        "severity":"High",
+        "location":"Pune",
+        "affected_team":"Fraud Investigation",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-21 12:41:16"
+    },
+    {
+        "log_id":"LOG012",
+        "incident_type":"Store Network Connectivity Loss",
+        "description":"Store #789 experienced a complete loss of internet and internal network connectivity, disabling all critical systems including POS, back-office, WiFi, and VoIP services. Store operations are suspended.",
+        "severity":"Critical",
+        "location":"Delhi",
+        "affected_team":"Technical Support",
+        "system_status":"Down",
+        "timestamp":"2026-05-21 13:41:16"
+    },
+    {
+        "log_id":"LOG013",
+        "incident_type":"Digital Signage Network Outage",
+        "description":"The centralized digital signage network across the entire Northeast region (50+ stores) is displaying blank screens or outdated promotional content. Remote content deployment is failing.",
+        "severity":"Medium",
+        "location":"Bengaluru",
+        "affected_team":"Fraud Investigation",
+        "system_status":"Operational",
+        "timestamp":"2026-05-24 11:41:16"
+    },
+    {
+        "log_id":"LOG014",
+        "incident_type":"Digital Signage Network Outage",
+        "description":"The centralized digital signage network across the entire Northeast region (50+ stores) is displaying blank screens or outdated promotional content. Remote content deployment is failing.",
+        "severity":"Medium",
+        "location":"Mumbai",
+        "affected_team":"Payment Support",
+        "system_status":"Down",
+        "timestamp":"2026-05-21 06:41:16"
+    },
+    {
+        "log_id":"LOG015",
+        "incident_type":"Supplier Fulfillment Failure",
+        "description":"Key supplier 'Apex Components' notified of an inability to fulfill purchase order #P0987 for SKU 54321, a high-demand item, due to unforeseen production issues. This will lead to stock-outs in 200 stores.",
+        "severity":"High",
+        "location":"Pune",
+        "affected_team":"Fraud Investigation",
+        "system_status":"Operational",
+        "timestamp":"2026-05-23 14:41:16"
+    },
+    {
+        "log_id":"LOG016",
+        "incident_type":"Payment Terminal Malfunction (In-Store)",
+        "description":"Store #012 reported that 7 out of 10 PIN pad terminals are unresponsive or failing to process EMV chip and NFC payments. Customers are experiencing significant delays and transaction failures.",
+        "severity":"High",
+        "location":"Chennai",
+        "affected_team":"Fraud Investigation",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-23 03:41:16"
+    },
+    {
+        "log_id":"LOG017",
+        "incident_type":"Online Payment Gateway Interruption",
+        "description":"Our primary online payment gateway, 'PayFlow', is reporting intermittent transaction failures and timeouts affecting approximately 30% of attempted e-commerce purchases. Customer abandonment rates are elevated.",
+        "severity":"Critical",
+        "location":"Chennai",
+        "affected_team":"Technical Support",
+        "system_status":"Down",
+        "timestamp":"2026-05-22 11:41:16"
+    },
+    {
+        "log_id":"LOG018",
+        "incident_type":"Warehouse Management System (WMS) Discrepancy",
+        "description":"WMS in Distribution Center #3 is experiencing data synchronization issues, leading to significant inventory discrepancies between physical stock and system records. This impacts order fulfillment accuracy.",
+        "severity":"High",
+        "location":"Chennai",
+        "affected_team":"Fraud Investigation",
+        "system_status":"Down",
+        "timestamp":"2026-05-21 02:41:16"
+    },
+    {
+        "log_id":"LOG019",
+        "incident_type":"Store Network Connectivity Loss",
+        "description":"Store #789 experienced a complete loss of internet and internal network connectivity, disabling all critical systems including POS, back-office, WiFi, and VoIP services. Store operations are suspended.",
+        "severity":"Critical",
+        "location":"Delhi",
+        "affected_team":"Warehouse Operations",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-24 12:41:16"
+    },
+    {
+        "log_id":"LOG020",
+        "incident_type":"Warehouse Management System (WMS) Discrepancy",
+        "description":"WMS in Distribution Center #3 is experiencing data synchronization issues, leading to significant inventory discrepancies between physical stock and system records. This impacts order fulfillment accuracy.",
+        "severity":"High",
+        "location":"Pune",
+        "affected_team":"Technical Support",
+        "system_status":"Operational",
+        "timestamp":"2026-05-22 17:41:16"
+    },
+    {
+        "log_id":"LOG021",
+        "incident_type":"Store Network Connectivity Loss",
+        "description":"Store #789 experienced a complete loss of internet and internal network connectivity, disabling all critical systems including POS, back-office, WiFi, and VoIP services. Store operations are suspended.",
+        "severity":"Critical",
+        "location":"Chennai",
+        "affected_team":"Technical Support",
+        "system_status":"Operational",
+        "timestamp":"2026-05-21 18:41:16"
+    },
+    {
+        "log_id":"LOG022",
+        "incident_type":"POS System Outage",
+        "description":"Store #123 experienced a complete outage of all Point-of-Sale terminals for 45 minutes, rendering all transaction processing impossible. Initial diagnostic indicates a network switch failure.",
+        "severity":"Critical",
+        "location":"Delhi",
+        "affected_team":"Fraud Investigation",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-21 08:41:16"
+    },
+    {
+        "log_id":"LOG023",
+        "incident_type":"Digital Signage Network Outage",
+        "description":"The centralized digital signage network across the entire Northeast region (50+ stores) is displaying blank screens or outdated promotional content. Remote content deployment is failing.",
+        "severity":"Medium",
+        "location":"Chennai",
+        "affected_team":"Fraud Investigation",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-21 10:41:16"
+    },
+    {
+        "log_id":"LOG024",
+        "incident_type":"Online Payment Gateway Interruption",
+        "description":"Our primary online payment gateway, 'PayFlow', is reporting intermittent transaction failures and timeouts affecting approximately 30% of attempted e-commerce purchases. Customer abandonment rates are elevated.",
+        "severity":"Critical",
+        "location":"Mumbai",
+        "affected_team":"Technical Support",
+        "system_status":"Operational",
+        "timestamp":"2026-05-22 20:41:16"
+    },
+    {
+        "log_id":"LOG025",
+        "incident_type":"E-commerce Platform Performance Degradation",
+        "description":"The enterprise e-commerce website (www.retailcorp.com) is exhibiting severe performance degradation, including extended page load times and intermittent HTTP 503 errors, particularly during peak traffic hours.",
+        "severity":"High",
+        "location":"Delhi",
+        "affected_team":"Technical Support",
+        "system_status":"Down",
+        "timestamp":"2026-05-22 23:41:16"
+    },
+    {
+        "log_id":"LOG026",
+        "incident_type":"Online Payment Gateway Interruption",
+        "description":"Our primary online payment gateway, 'PayFlow', is reporting intermittent transaction failures and timeouts affecting approximately 30% of attempted e-commerce purchases. Customer abandonment rates are elevated.",
+        "severity":"Critical",
+        "location":"Mumbai",
+        "affected_team":"Technical Support",
+        "system_status":"Operational",
+        "timestamp":"2026-05-21 07:41:16"
+    },
+    {
+        "log_id":"LOG027",
+        "incident_type":"Payment Terminal Malfunction (In-Store)",
+        "description":"Store #012 reported that 7 out of 10 PIN pad terminals are unresponsive or failing to process EMV chip and NFC payments. Customers are experiencing significant delays and transaction failures.",
+        "severity":"High",
+        "location":"Delhi",
+        "affected_team":"Technical Support",
+        "system_status":"Down",
+        "timestamp":"2026-05-24 07:41:16"
+    },
+    {
+        "log_id":"LOG028",
+        "incident_type":"E-commerce Platform Performance Degradation",
+        "description":"The enterprise e-commerce website (www.retailcorp.com) is exhibiting severe performance degradation, including extended page load times and intermittent HTTP 503 errors, particularly during peak traffic hours.",
+        "severity":"High",
+        "location":"Delhi",
+        "affected_team":"Customer Support",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-23 16:41:16"
+    },
+    {
+        "log_id":"LOG029",
+        "incident_type":"Warehouse Management System (WMS) Discrepancy",
+        "description":"WMS in Distribution Center #3 is experiencing data synchronization issues, leading to significant inventory discrepancies between physical stock and system records. This impacts order fulfillment accuracy.",
+        "severity":"High",
+        "location":"Pune",
+        "affected_team":"Payment Support",
+        "system_status":"Partially Down",
+        "timestamp":"2026-05-24 06:41:16"
+    }
+]

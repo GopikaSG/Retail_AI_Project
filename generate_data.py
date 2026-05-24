@@ -1,18 +1,21 @@
 # =====================================================
-# RETAIL AI PROJECT
-# HYBRID AI + TEMPLATE ARCHITECTURE
-# =====================================================
-
-# =====================================================
 # IMPORTS
 # =====================================================
 
 import os
+import json
 import random
 from datetime import datetime, timedelta
+from io import StringIO
 
 import pandas as pd
 from faker import Faker
+
+# Gemini AI
+import google.generativeai as genai
+
+# Load .env
+from dotenv import load_dotenv
 
 # PDF Generation
 from reportlab.platypus import (
@@ -23,9 +26,6 @@ from reportlab.platypus import (
 
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.pagesizes import letter
-
-# Gemini AI
-import google.generativeai as genai
 
 # =====================================================
 # INITIAL SETUP
@@ -40,12 +40,22 @@ os.makedirs("docs", exist_ok=True)
 print("Project folders created successfully!")
 
 # =====================================================
-# GEMINI CONFIGURATION
+# LOAD ENV VARIABLES
 # =====================================================
 
-# Replace with your Gemini API Key
+load_dotenv()
 
-API_KEY = "AIzaSyCQcltWTK4EtvlnUpqnduBcos_X8jzzhko"
+API_KEY = os.getenv("GEMINI_API_KEY")
+
+if not API_KEY:
+
+    raise ValueError(
+        "GEMINI_API_KEY not found in .env file"
+    )
+
+# =====================================================
+# GEMINI CONFIGURATION
+# =====================================================
 
 genai.configure(api_key=API_KEY)
 
@@ -56,50 +66,75 @@ model = genai.GenerativeModel(
 print("Gemini configured successfully!")
 
 # =====================================================
-# MASTER DATA
+# AI-BASED TICKET GENERATION
 # =====================================================
 
-issue_types = [
-    "Order Delay",
-    "Wrong Item",
-    "Damaged Item",
-    "Refund Issue",
-    "Payment Issue",
-    "Cancellation Issue",
-    "Stock Issue",
-    "App Issue"
-]
+print("\nGenerating AI-based retail tickets...")
 
-products = [
-    "Shoes",
-    "Headphones",
-    "Laptop Bag",
-    "Smartwatch",
-    "Jeans",
-    "Mobile Charger",
-    "Bluetooth Speaker",
-    "Tablet"
-]
+ticket_prompt = """
+Generate 20 realistic retail support tickets.
+
+Output STRICTLY in valid CSV format.
+
+Columns:
+issue_type,ticket_text,priority,status
+
+Requirements:
+- enterprise retail support tone
+- realistic customer complaints
+- realistic operational issues
+- no markdown
+- no explanations
+- no code blocks
+"""
+
+try:
+
+    response = model.generate_content(
+        ticket_prompt
+    )
+
+    csv_text = response.text.strip()
+
+    print("\n========== RAW AI OUTPUT ==========\n")
+
+    print(csv_text)
+
+except Exception as e:
+
+    print("Gemini failed!")
+
+    print(e)
+
+    # Fallback sample
+    csv_text = """
+issue_type,ticket_text,priority,status
+Order Delay,"My shipment has not arrived for 5 days",High,Open
+Refund Issue,"Refund still pending after return pickup",Medium,In Progress
+Payment Failure,"Amount deducted but no order created",Critical,Escalated
+Product Defect,"Delivered product is damaged",High,Open
+Account Issue,"Unable to access my account",Medium,Resolved
+"""
+
+# =====================================================
+# CONVERT TO DATAFRAME
+# =====================================================
+
+base_df = pd.read_csv(
+    StringIO(csv_text)
+)
+
+print("\nAI-generated rows loaded!")
+
+# =====================================================
+# MASTER DATA
+# =====================================================
 
 channels = [
     "Email",
     "Chat",
     "Phone",
     "Mobile App"
-]
-
-priorities = [
-    "Low",
-    "Medium",
-    "High",
-    "Critical"
-]
-
-statuses = [
-    "Open",
-    "In Progress",
-    "Resolved",
-    "Escalated"
 ]
 
 locations = [
@@ -111,24 +146,12 @@ locations = [
 ]
 
 teams = [
-    "Logistics Team",
-    "Payment Support",
+    "Customer Support",
     "Warehouse Operations",
+    "Payment Support",
     "Technical Support",
-    "Customer Support"
-]
-
-sentiments = [
-    "Angry",
-    "Frustrated",
-    "Neutral",
-    "Satisfied"
-]
-
-customer_tiers = [
-    "Silver",
-    "Gold",
-    "Platinum"
+    "Fraud Investigation",
+    "Logistics Team"
 ]
 
 payment_methods = [
@@ -138,117 +161,23 @@ payment_methods = [
     "Wallet"
 ]
 
-delivery_partners = [
-    "Delhivery",
-    "BlueDart",
-    "Ekart",
-    "XpressBees"
+customer_tiers = [
+    "Silver",
+    "Gold",
+    "Platinum"
 ]
 
 # =====================================================
-# TEMPLATE-BASED COMPLAINTS
+# EXPAND TO 150 ROWS
 # =====================================================
 
-complaint_templates = {
+print("\nExpanding dataset to 150 rows...")
 
-    "Order Delay": [
-        "My order for {} has not been delivered yet.",
-        "Shipment tracking for my {} has not updated.",
-        "Delivery for my {} is delayed."
-    ],
+expanded_rows = []
 
-    "Wrong Item": [
-        "I received the wrong {} in my package.",
-        "Incorrect {} was delivered.",
-        "Delivered item does not match my order."
-    ],
+for i in range(150):
 
-    "Damaged Item": [
-        "The {} arrived damaged and unusable.",
-        "Packaging for {} was broken.",
-        "The delivered {} is defective."
-    ],
-
-    "Refund Issue": [
-        "Refund for my {} is still pending.",
-        "Refund not received for returned {}.",
-        "Refund process for {} is delayed."
-    ],
-
-    "Payment Issue": [
-        "Payment deducted for {} but order failed.",
-        "Transaction failed during {} purchase.",
-        "Amount deducted but no order confirmation received."
-    ],
-
-    "Cancellation Issue": [
-        "Unable to cancel my {} order.",
-        "Cancellation request failed for {}.",
-        "Cancelled order is still active."
-    ],
-
-    "Stock Issue": [
-        "{} became out of stock after ordering.",
-        "Inventory issue detected for {}.",
-        "{} unavailable after payment."
-    ],
-
-    "App Issue": [
-        "Retail app crashes during {} purchase.",
-        "Checkout page freezes while ordering {}.",
-        "Unable to place {} order through app."
-    ]
-}
-
-# =====================================================
-# RESOLUTION SUGGESTIONS
-# =====================================================
-
-resolution_suggestions = {
-
-    "Order Delay":
-        "Escalate to logistics support and provide updated ETA.",
-
-    "Wrong Item":
-        "Arrange replacement pickup and warehouse verification.",
-
-    "Damaged Item":
-        "Initiate return pickup and offer replacement/refund.",
-
-    "Refund Issue":
-        "Escalate to finance support and verify refund status.",
-
-    "Payment Issue":
-        "Check payment gateway logs and transaction ID.",
-
-    "Cancellation Issue":
-        "Verify cancellation eligibility and process request.",
-
-    "Stock Issue":
-        "Validate inventory sync and suggest alternatives.",
-
-    "App Issue":
-        "Escalate to technical support for debugging."
-}
-
-# =====================================================
-# GENERATE RETAIL TICKETS
-# TEMPLATE-BASED (SAVES API QUOTA)
-# =====================================================
-
-print("Generating retail ticket dataset...")
-
-ticket_rows = []
-
-for i in range(1, 151):
-
-    issue_type = random.choice(issue_types)
-
-    product = random.choice(products)
-
-    complaint = random.choice(
-        complaint_templates[issue_type]
-    ).format(product)
+    row = base_df.sample(1).iloc[0]
 
     city = random.choice(locations)
 
@@ -257,7 +186,7 @@ for i in range(1, 151):
         hours=random.randint(0, 23)
     )
 
-    ticket_rows.append({
+    expanded_rows.append({
 
         "ticket_id":
             f"{city[:3].upper()}-TKT{i:04}",
@@ -268,29 +197,17 @@ for i in range(1, 151):
         "order_id":
             f"ORD{random.randint(10000,99999)}",
 
-        "product":
-            product,
-
         "issue_type":
-            issue_type,
+            row["issue_type"],
 
         "ticket_text":
-            complaint,
+            row["ticket_text"],
 
         "priority":
-            random.choice(priorities),
+            row["priority"],
 
-        "customer_sentiment":
-            random.choice(sentiments),
-
-        "customer_tier":
-            random.choice(customer_tiers),
-
-        "payment_method":
-            random.choice(payment_methods),
-
-        "delivery_partner":
-            random.choice(delivery_partners),
+        "status":
+            row["status"],
 
         "channel":
             random.choice(channels),
@@ -301,8 +218,11 @@ for i in range(1, 151):
         "assigned_team":
             random.choice(teams),
 
-        "status":
-            random.choice(statuses),
+        "payment_method":
+            random.choice(payment_methods),
+
+        "customer_tier":
+            random.choice(customer_tiers),
 
         "requires_escalation":
             random.choice(["Yes", "No"]),
@@ -313,71 +233,135 @@ for i in range(1, 151):
         "resolution_time_hours":
             random.randint(1, 72),
 
-        "resolution_suggestion":
-            resolution_suggestions[issue_type],
-
         "created_at":
-            created_time.strftime("%Y-%m-%d %H:%M:%S")
+            created_time.strftime(
+                "%Y-%m-%d %H:%M:%S"
+            )
     })
 
-tickets_df = pd.DataFrame(ticket_rows)
+tickets_df = pd.DataFrame(expanded_rows)
+
+# =====================================================
+# SAVE TICKETS CSV
+# =====================================================
 
 tickets_df.to_csv(
     "data/retail_tickets.csv",
     index=False
 )
 
-print("Retail ticket dataset generated!")
+print("Retail ticket dataset generated successfully!")
 
 # =====================================================
-# TEMPLATE-BASED INCIDENT LOGS
+# INCIDENT LOG GENERATION (JSON FORMAT)
 # =====================================================
 
-incident_templates = {
+print("\nGenerating incident logs in JSON format...")
 
-    "Payment Gateway Failure": [
-        "Payment gateway latency increased during peak traffic.",
-        "High transaction failure rate detected.",
-        "Customers unable to complete payments."
-    ],
+incident_prompt = """
+Generate 10 realistic retail operational incident logs.
 
-    "Inventory Mismatch": [
-        "Warehouse inventory sync issue detected.",
-        "Stock inconsistency identified.",
-        "Inventory mismatch between systems."
-    ],
+Return ONLY valid JSON.
 
-    "Website Downtime": [
-        "Retail website unavailable during peak hours.",
-        "Checkout service outage detected.",
-        "Frontend application temporarily down."
-    ],
+Expected JSON format:
 
-    "Warehouse Delay": [
-        "Shipment processing backlog detected.",
-        "Warehouse operational delays increased.",
-        "Dispatch workflow delayed."
-    ],
+[
+  {
+    "incident_type": "...",
+    "description": "...",
+    "severity": "..."
+  }
+]
 
-    "Delivery Partner Delay": [
-        "Courier network disruption identified.",
-        "Shipment ETA increased.",
-        "Logistics delays reported."
+Requirements:
+- enterprise operational tone
+- realistic retail technical issues
+- outage scenarios
+- logistics problems
+- payment failures
+- no markdown
+- no explanations
+"""
+
+try:
+
+    incident_response = model.generate_content(
+        incident_prompt
+    )
+
+    incident_json_text = (
+        incident_response.text
+        .strip()
+        .replace("```json", "")
+        .replace("```", "")
+    )
+
+    # Convert JSON string to Python list
+    incident_data = json.loads(
+        incident_json_text
+    )
+
+    print("\n========== RAW INCIDENT JSON ==========\n")
+
+    print(
+        json.dumps(
+            incident_data,
+            indent=2
+        )
+    )
+
+except Exception as e:
+
+    print("Gemini incident generation failed!")
+
+    print(e)
+
+    # Fallback JSON data
+    incident_data = [
+        {
+            "incident_type":
+                "Payment Gateway Failure",
+
+            "description":
+                "Payment transactions timing out during checkout",
+
+            "severity":
+                "Critical"
+        },
+
+        {
+            "incident_type":
+                "Website Downtime",
+
+            "description":
+                "Retail checkout service unavailable",
+
+            "severity":
+                "High"
+        },
+
+        {
+            "incident_type":
+                "Warehouse Delay",
+
+            "description":
+                "Shipment processing backlog detected",
+
+            "severity":
+                "Medium"
+        }
     ]
-}
 
-print("Generating incident logs...")
+# =====================================================
+# CREATE INCIDENT DATAFRAME
+# =====================================================
 
 incident_rows = []
 
-incident_types = list(
-    incident_templates.keys()
-)
+for i in range(30):
 
-for i in range(1, 31):
-
-    incident_type = random.choice(
-        incident_types
+    row = random.choice(
+        incident_data
     )
 
     incident_rows.append({
@@ -386,10 +370,13 @@ for i in range(1, 31):
             f"LOG{i:03}",
 
         "incident_type":
-            incident_type,
+            row["incident_type"],
+
+        "description":
+            row["description"],
 
         "severity":
-            random.choice(priorities),
+            row["severity"],
 
         "location":
             random.choice(locations),
@@ -404,14 +391,6 @@ for i in range(1, 31):
                 "Down"
             ]),
 
-        "requires_immediate_action":
-            random.choice(["Yes", "No"]),
-
-        "description":
-            random.choice(
-                incident_templates[incident_type]
-            ),
-
         "timestamp":
             (
                 datetime.now() - timedelta(
@@ -424,131 +403,122 @@ incident_df = pd.DataFrame(
     incident_rows
 )
 
+# =====================================================
+# SAVE INCIDENT FILES
+# =====================================================
+
+# CSV
 incident_df.to_csv(
     "data/retail_incident_logs.csv",
     index=False
 )
 
-print("Incident logs generated!")
+# JSON
+incident_df.to_json(
+    "data/retail_incident_logs.json",
+    orient="records",
+    indent=4
+)
+
+print(
+    "Incident logs generated successfully!"
+)
+
+print(
+    "Saved as CSV and JSON."
+)
 
 # =====================================================
-# AI-BASED SOP DOCUMENT GENERATION
-# ONLY 4 API CALLS → LOW COST
+# ENTERPRISE SOP DOCUMENTS
 # =====================================================
 
-document_prompts = {
+topics = {
 
-    "refund_policy":
-    """
-    Generate a professional enterprise retail refund policy.
+    "sop_order_delay":
+        "order delay handling",
 
-    Include:
-    - document control
-    - purpose
-    - scope
-    - workflow
-    - SLA
-    - escalation rules
-    - audit requirements
-    - customer communication
+    "sop_product_defect":
+        "product defect handling",
 
-    Make it detailed and enterprise-grade.
-    """,
+    "sop_account_issue":
+        "customer account issue handling",
 
-    "damaged_item_sop":
-    """
-    Generate a professional damaged item handling SOP
-    for retail support operations.
-
-    Include:
-    - verification process
-    - warehouse coordination
-    - replacement workflow
-    - escalation rules
-    - SLA requirements
-    - audit logging
-
-    Make it company-level and detailed.
-    """,
-
-    "payment_failure_guide":
-    """
-    Generate a professional payment failure
-    escalation guide.
-
-    Include:
-    - transaction verification
-    - gateway troubleshooting
-    - escalation workflow
-    - SLA requirements
-    - customer communication
-    - monitoring and reporting
-
-    Make it enterprise-grade.
-    """,
-
-    "order_delay_sop":
-    """
-    Generate a professional order delay
-    troubleshooting guide.
-
-    Include:
-    - shipment validation
-    - logistics coordination
-    - delay investigation
-    - escalation process
-    - SLA requirements
-    - customer communication
-
-    Make it detailed and professional.
-    """
+    "sop_fraud_alert":
+        "retail fraud alert handling"
 }
-
-# =====================================================
-# GENERATE DOCUMENTS USING GEMINI
-# =====================================================
-
-print("Generating AI-based SOP documents...")
 
 documents = {}
 
-for doc_name, prompt in document_prompts.items():
+print("\nGenerating enterprise SOP documents...")
+
+for file_name, topic in topics.items():
+
+    prompt = f"""
+    Generate a detailed enterprise retail SOP document.
+
+    TOPIC:
+    {topic}
+
+    STRICT FORMAT:
+
+    Document Title
+    Version
+    Covers
+
+    SECTION 1 — OVERVIEW
+
+    SECTION 2 — COMMON CAUSES
+
+    SECTION 3 — STEP-BY-STEP RESOLUTION PROCEDURE
+
+    SECTION 4 — ESCALATION CRITERIA
+
+    SECTION 5 — PREVENTION TIPS
+
+    REQUIREMENTS:
+    - realistic retail operations terminology
+    - numbered workflow steps
+    - escalation logic
+    - internal operational references
+    - professional customer support language
+    - make it detailed and enterprise-grade
+    - generate 2-3 pages worth of content
+    """
 
     try:
 
-        print(f"Generating {doc_name}...")
+        print(f"Generating {file_name}...")
 
         response = model.generate_content(
             prompt
         )
 
-        documents[doc_name] = response.text
+        documents[file_name] = response.text
 
-        print(f"{doc_name} generated successfully!")
+        print(f"{file_name} generated!")
 
     except Exception as e:
 
         print(
-            f"Gemini failed for {doc_name}"
+            f"Gemini failed for {file_name}"
         )
 
         print(e)
 
-        # Fallback
-        documents[doc_name] = f"""
-        {doc_name}
-
-        AI generation failed.
-        Fallback document generated.
+        documents[file_name] = f"""
+        SOP generation failed for:
+        {topic}
         """
-
-print("All SOP documents generated!")
 
 # =====================================================
 # PDF CREATION FUNCTION
 # =====================================================
 
-def create_pdf(file_path, title, content):
+def create_pdf(
+    file_path,
+    title,
+    content
+):
 
     doc = SimpleDocTemplate(
         file_path,
@@ -589,7 +559,7 @@ def create_pdf(file_path, title, content):
 # GENERATE TXT + PDF FILES
 # =====================================================
 
-print("Generating TXT and PDF files...")
+print("\nGenerating TXT and PDF SOP files...")
 
 for file_name, content in documents.items():
 
@@ -607,11 +577,14 @@ for file_name, content in documents.items():
 
     create_pdf(
         pdf_path,
-        file_name.replace("_", " ").title(),
+        file_name.replace(
+            "_",
+            " "
+        ).title(),
         content
     )
 
-print("Documents generated successfully!")
+print("SOP documents generated successfully!")
 
 # =====================================================
 # DATA QUALITY CHECKS
@@ -626,64 +599,26 @@ print(tickets_df.isnull().sum())
 print("\nDuplicate Ticket IDs:")
 
 print(
-    tickets_df["ticket_id"].duplicated().sum()
+    tickets_df["ticket_id"]
+    .duplicated()
+    .sum()
 )
 
 print("\nDuplicate Incident Log IDs:")
 
 print(
-    incident_df["log_id"].duplicated().sum()
+    incident_df["log_id"]
+    .duplicated()
+    .sum()
 )
 
 print("\nData quality checks completed!")
 
 # =====================================================
-# AI-GENERATED README
-# =====================================================
-
-readme_prompt = """
-Generate a professional README.md
-for an AI-Based Retail Incident
-Ticket Analyzer project.
-
-Include:
-- project overview
-- features
-- generated files
-- technologies used
-- workflow explanation
-- use cases
-"""
-
-try:
-
-    response = model.generate_content(
-        readme_prompt
-    )
-
-    readme_content = response.text
-
-except:
-
-    readme_content = """
-    RETAIL AI PROJECT
-    """
-
-with open(
-    "README.md",
-    "w",
-    encoding="utf-8"
-) as f:
-
-    f.write(readme_content)
-
-print("README.md generated successfully!")
-
-# =====================================================
 # SAMPLE OUTPUT
 # =====================================================
 
-print("\n========== SAMPLE RETAIL TICKETS ==========\n")
+print("\n========== SAMPLE TICKETS ==========\n")
 
 print(tickets_df.head())
 
