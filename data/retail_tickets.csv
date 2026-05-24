@@ -1,0 +1,301 @@
+ticket_id,customer_id,order_id,product,issue_type,ticket_text,priority,customer_sentiment,channel,location,assigned_team,status,requires_escalation,sla_breach,created_at
+TKT0001,CUST7069,ORD34576,Mobile Charger,Damaged Item,The packaging for Mobile Charger was damaged.,Critical,Angry,Email,Delhi Store,Technical Support,In Progress,Yes,No,2026-05-16 03:03:07
+TKT0002,CUST8133,ORD14207,Wireless Mouse,Order Delay,My order for Wireless Mouse has not been delivered yet.,Critical,Frustrated,Email,Chennai Store,Warehouse Operations,Escalated,No,No,2026-05-22 15:03:07
+TKT0003,CUST8491,ORD77333,Shoes,Payment Issue,Transaction completed but Shoes order was not placed.,Critical,Frustrated,Chat,Hyderabad Hub,Warehouse Operations,Open,No,Yes,2026-05-22 17:03:07
+TKT0004,CUST5043,ORD18846,Smartwatch,Damaged Item,The Smartwatch arrived damaged and unusable.,High,Angry,Chat,Mumbai Warehouse,Technical Support,In Progress,Yes,Yes,2026-05-17 04:03:07
+TKT0005,CUST6264,ORD70572,Bluetooth Speaker,Damaged Item,The packaging for Bluetooth Speaker was damaged.,Critical,Satisfied,Email,Delhi Store,Customer Support,Escalated,No,No,2026-04-28 20:03:07
+TKT0006,CUST1266,ORD22957,Headphones,Order Delay,Shipment tracking for my Headphones has not updated.,Critical,Neutral,Chat,Pune Warehouse,Warehouse Operations,In Progress,Yes,Yes,2026-05-11 13:03:07
+TKT0007,CUST8976,ORD62907,Headphones,Wrong Item,The Headphones received is incorrect.,Low,Frustrated,Mobile App,Pune Warehouse,Customer Support,Escalated,Yes,No,2026-05-16 17:03:07
+TKT0008,CUST3092,ORD59057,Bluetooth Speaker,Damaged Item,My Bluetooth Speaker was delivered in broken condition.,Medium,Frustrated,Phone,Mumbai Warehouse,Warehouse Operations,Open,Yes,Yes,2026-05-20 11:03:07
+TKT0009,CUST4118,ORD99079,Bluetooth Speaker,App Issue,Unable to place Bluetooth Speaker order through app.,High,Frustrated,Email,Delhi Store,Customer Support,Escalated,No,Yes,2026-05-11 06:03:07
+TKT0010,CUST6905,ORD62639,Backpack,Wrong Item,I received the wrong Backpack in my package.,High,Frustrated,Email,Mumbai Warehouse,Payment Support,In Progress,No,Yes,2026-05-20 20:03:07
+TKT0011,CUST3624,ORD90857,Headphones,Damaged Item,The Headphones arrived damaged and unusable.,Low,Satisfied,Mobile App,Mumbai Warehouse,Logistics Team,Escalated,No,Yes,2026-05-23 18:03:07
+TKT0012,CUST5087,ORD30352,Laptop Bag,Order Delay,The delivery for my Laptop Bag is delayed by several days.,Medium,Frustrated,Email,Delhi Store,Payment Support,Escalated,Yes,No,2026-05-23 02:03:07
+TKT0013,CUST5395,ORD64412,Mobile Charger,Damaged Item,The packaging for Mobile Charger was damaged.,High,Angry,Chat,Bengaluru Hub,Logistics Team,Resolved,Yes,No,2026-05-12 05:03:07
+TKT0014,CUST5934,ORD32778,Backpack,Refund Issue,Refund status for Backpack has not been updated.,High,Neutral,Email,Delhi Store,Warehouse Operations,Resolved,No,No,2026-05-02 09:03:07
+TKT0015,CUST3825,ORD74695,Shoes,Stock Issue,Shoes was shown available but later became out of stock.,High,Angry,Chat,Delhi Store,Customer Support,In Progress,Yes,Yes,2026-05-16 04:03:07
+TKT0016,CUST5541,ORD38442,Laptop Bag,App Issue,Unable to place Laptop Bag order through app.,Medium,Angry,Phone,Pune Warehouse,Logistics Team,In Progress,Yes,Yes,2026-05-07 05:03:07
+TKT0017,CUST8985,ORD39810,Shoes,Refund Issue,I returned the Shoes but refund is not processed.,Medium,Angry,Email,Bengaluru Hub,Logistics Team,Open,No,No,2026-04-29 14:03:07
+TKT0018,CUST5605,ORD31648,Mobile Charger,App Issue,The app crashes while purchasing Mobile Charger.,Low,Angry,Mobile App,Pune Warehouse,Technical Support,In Progress,No,No,2026-05-11 02:03:07
+TKT0019,CUST3107,ORD34822,Smartwatch,Wrong Item,A different item was delivered instead of Smartwatch.,Low,Satisfied,Chat,Chennai Store,Payment Support,Open,Yes,No,2026-05-04 05:03:07
+TKT0020,CUST8020,ORD96947,Wireless Mouse,App Issue,The app crashes while purchasing Wireless Mouse.,Critical,Satisfied,Phone,Pune Warehouse,Logistics Team,Resolved,Yes,Yes,2026-05-17 20:03:07
+TKT0021,CUST9814,ORD59576,Bluetooth Speaker,Refund Issue,I returned the Bluetooth Speaker but refund is not processed.,Medium,Frustrated,Chat,Delhi Store,Warehouse Operations,Resolved,No,Yes,2026-05-04 03:03:07
+TKT0022,CUST6077,ORD35575,Tablet,Damaged Item,The packaging for Tablet was damaged.,High,Neutral,Phone,Bengaluru Hub,Logistics Team,In Progress,Yes,No,2026-05-05 20:03:07
+TKT0023,CUST1515,ORD29258,Jeans,App Issue,Retail website not responding during Jeans purchase.,Critical,Frustrated,Chat,Bengaluru Hub,Technical Support,Resolved,No,Yes,2026-05-02 19:03:07
+TKT0024,CUST7595,ORD56030,Bluetooth Speaker,Cancellation Issue,Order cancellation failed for Bluetooth Speaker.,Critical,Frustrated,Chat,Delhi Store,Logistics Team,Resolved,Yes,No,2026-05-19 12:03:07
+TKT0025,CUST7581,ORD14062,Jeans,Order Delay,The delivery for my Jeans is delayed by several days.,Medium,Angry,Email,Mumbai Warehouse,Warehouse Operations,Escalated,No,No,2026-05-03 17:03:07
+TKT0026,CUST4879,ORD23298,Jeans,Order Delay,Shipment tracking for my Jeans has not updated.,High,Frustrated,Email,Pune Warehouse,Payment Support,Resolved,No,Yes,2026-05-06 10:03:07
+TKT0027,CUST4236,ORD85589,Laptop Bag,Cancellation Issue,I cancelled my Laptop Bag order but it is still active.,Low,Satisfied,Chat,Hyderabad Hub,Warehouse Operations,Open,Yes,No,2026-05-22 06:03:07
+TKT0028,CUST1716,ORD64043,Jeans,Stock Issue,Jeans was shown available but later became out of stock.,Low,Satisfied,Email,Delhi Store,Logistics Team,Escalated,Yes,No,2026-05-17 17:03:07
+TKT0029,CUST5229,ORD96600,Shoes,Wrong Item,A different item was delivered instead of Shoes.,Medium,Frustrated,Email,Hyderabad Hub,Customer Support,Open,Yes,Yes,2026-05-18 07:03:07
+TKT0030,CUST4378,ORD66712,Jeans,Stock Issue,Jeans was shown available but later became out of stock.,Low,Neutral,Mobile App,Hyderabad Hub,Technical Support,Resolved,Yes,No,2026-05-23 11:03:07
+TKT0031,CUST3274,ORD45254,Shoes,Refund Issue,My refund for Shoes is still pending.,Critical,Angry,Mobile App,Delhi Store,Payment Support,Open,Yes,No,2026-05-20 11:03:07
+TKT0032,CUST5486,ORD11823,Shoes,Cancellation Issue,Cancellation request for Shoes is not processed.,Low,Satisfied,Email,Mumbai Warehouse,Warehouse Operations,Escalated,Yes,No,2026-04-24 03:03:07
+TKT0033,CUST6798,ORD66440,Shoes,App Issue,Retail website not responding during Shoes purchase.,Medium,Satisfied,Mobile App,Mumbai Warehouse,Payment Support,Resolved,No,Yes,2026-05-08 21:03:07
+TKT0034,CUST7718,ORD81162,Wireless Mouse,Cancellation Issue,I want to cancel Wireless Mouse but the order is still open.,Low,Satisfied,Phone,Chennai Store,Customer Support,In Progress,No,No,2026-05-02 22:03:07
+TKT0035,CUST9282,ORD62058,Laptop Bag,Damaged Item,The packaging for Laptop Bag was damaged.,Medium,Satisfied,Mobile App,Delhi Store,Payment Support,In Progress,No,Yes,2026-05-17 04:03:07
+TKT0036,CUST8040,ORD71093,Shoes,Damaged Item,The delivered Shoes is defective.,Medium,Angry,Chat,Pune Warehouse,Logistics Team,In Progress,No,No,2026-05-12 14:03:07
+TKT0037,CUST5820,ORD39820,Bluetooth Speaker,Refund Issue,My refund for Bluetooth Speaker is still pending.,Medium,Neutral,Phone,Bengaluru Hub,Warehouse Operations,In Progress,No,No,2026-05-03 09:03:07
+TKT0038,CUST4699,ORD62430,Backpack,Wrong Item,The Backpack received is incorrect.,High,Neutral,Email,Pune Warehouse,Logistics Team,Open,Yes,No,2026-05-20 01:03:07
+TKT0039,CUST8075,ORD74498,Smartwatch,Payment Issue,Payment issue occurred during checkout for Smartwatch.,Critical,Frustrated,Mobile App,Delhi Store,Logistics Team,In Progress,Yes,No,2026-04-30 13:03:07
+TKT0040,CUST9642,ORD32236,Wireless Mouse,Payment Issue,Amount deducted for Wireless Mouse but no order confirmation received.,High,Satisfied,Chat,Delhi Store,Payment Support,In Progress,Yes,Yes,2026-05-16 16:03:07
+TKT0041,CUST2595,ORD14306,Backpack,Payment Issue,Payment was deducted while ordering Backpack but order failed.,Low,Neutral,Chat,Chennai Store,Warehouse Operations,Open,Yes,No,2026-04-30 08:03:07
+TKT0042,CUST7345,ORD66944,Smartwatch,Damaged Item,The Smartwatch arrived damaged and unusable.,High,Frustrated,Mobile App,Delhi Store,Customer Support,In Progress,No,Yes,2026-04-25 06:03:07
+TKT0043,CUST9260,ORD62827,Shoes,Refund Issue,Refund for my Shoes has not been credited.,Critical,Frustrated,Email,Hyderabad Hub,Payment Support,Open,No,No,2026-04-25 01:03:07
+TKT0044,CUST9289,ORD43852,Mobile Charger,Payment Issue,Amount deducted for Mobile Charger but no order confirmation received.,Critical,Satisfied,Email,Pune Warehouse,Technical Support,Open,Yes,No,2026-04-29 12:03:07
+TKT0045,CUST8654,ORD13964,Backpack,Payment Issue,Transaction completed but Backpack order was not placed.,Low,Satisfied,Mobile App,Hyderabad Hub,Technical Support,Open,No,No,2026-05-15 13:03:07
+TKT0046,CUST2383,ORD63357,Tablet,Stock Issue,Tablet was shown available but later became out of stock.,Medium,Satisfied,Chat,Bengaluru Hub,Payment Support,In Progress,Yes,No,2026-04-30 16:03:07
+TKT0047,CUST5012,ORD89839,Headphones,Refund Issue,My refund for Headphones is still pending.,High,Satisfied,Email,Chennai Store,Logistics Team,Resolved,Yes,No,2026-05-14 04:03:07
+TKT0048,CUST2250,ORD86805,Shoes,Damaged Item,The Shoes arrived damaged and unusable.,Critical,Neutral,Mobile App,Chennai Store,Customer Support,Escalated,No,No,2026-05-18 02:03:07
+TKT0049,CUST4905,ORD35924,Backpack,Wrong Item,The delivered Backpack does not match my order.,Critical,Angry,Chat,Chennai Store,Warehouse Operations,Resolved,No,Yes,2026-05-08 15:03:07
+TKT0050,CUST7772,ORD10822,Mobile Charger,Order Delay,The delivery for my Mobile Charger is delayed by several days.,Medium,Neutral,Email,Delhi Store,Warehouse Operations,Resolved,Yes,No,2026-04-26 13:03:07
+TKT0051,CUST9239,ORD63930,Shoes,Payment Issue,Payment issue occurred during checkout for Shoes.,Low,Neutral,Phone,Pune Warehouse,Customer Support,In Progress,Yes,Yes,2026-05-07 02:03:07
+TKT0052,CUST4138,ORD75360,Mobile Charger,Damaged Item,The packaging for Mobile Charger was damaged.,Critical,Satisfied,Email,Delhi Store,Logistics Team,In Progress,Yes,No,2026-05-22 07:03:07
+TKT0053,CUST9878,ORD20364,Headphones,Cancellation Issue,I want to cancel Headphones but the order is still open.,High,Frustrated,Email,Mumbai Warehouse,Logistics Team,Resolved,Yes,No,2026-05-10 03:03:07
+TKT0054,CUST1987,ORD60591,Wireless Mouse,Stock Issue,Inventory issue occurred while purchasing Wireless Mouse.,Critical,Frustrated,Mobile App,Bengaluru Hub,Technical Support,Escalated,No,No,2026-04-23 19:03:07
+TKT0055,CUST6686,ORD92187,Bluetooth Speaker,Cancellation Issue,Cancellation request for Bluetooth Speaker is not processed.,Low,Angry,Chat,Chennai Store,Logistics Team,Escalated,No,No,2026-05-22 01:03:07
+TKT0056,CUST9110,ORD27493,Headphones,Damaged Item,My Headphones was delivered in broken condition.,Critical,Frustrated,Email,Chennai Store,Customer Support,In Progress,No,No,2026-05-04 10:03:07
+TKT0057,CUST6011,ORD86675,Jeans,Wrong Item,The Jeans received is incorrect.,Low,Frustrated,Phone,Bengaluru Hub,Technical Support,In Progress,No,No,2026-05-14 05:03:07
+TKT0058,CUST3264,ORD32930,Laptop Bag,Refund Issue,My refund for Laptop Bag is still pending.,Low,Angry,Mobile App,Hyderabad Hub,Logistics Team,Open,No,No,2026-04-24 04:03:07
+TKT0059,CUST2682,ORD11305,Wireless Mouse,Wrong Item,A different item was delivered instead of Wireless Mouse.,High,Frustrated,Mobile App,Pune Warehouse,Warehouse Operations,Open,No,No,2026-04-29 02:03:07
+TKT0060,CUST9491,ORD21896,Bluetooth Speaker,Cancellation Issue,I cancelled my Bluetooth Speaker order but it is still active.,High,Angry,Email,Chennai Store,Warehouse Operations,Escalated,Yes,Yes,2026-05-07 20:03:07
+TKT0061,CUST7016,ORD61681,Laptop Bag,Stock Issue,Laptop Bag was unavailable after order placement.,Medium,Neutral,Mobile App,Mumbai Warehouse,Payment Support,In Progress,No,Yes,2026-04-27 06:03:07
+TKT0062,CUST2464,ORD48082,Headphones,Stock Issue,Headphones was unavailable after order placement.,Low,Satisfied,Mobile App,Chennai Store,Warehouse Operations,Escalated,Yes,No,2026-05-18 17:03:07
+TKT0063,CUST7533,ORD20738,Backpack,Refund Issue,I returned the Backpack but refund is not processed.,Low,Satisfied,Phone,Bengaluru Hub,Payment Support,Escalated,Yes,Yes,2026-05-02 12:03:07
+TKT0064,CUST5981,ORD47425,Headphones,App Issue,Unable to place Headphones order through app.,High,Neutral,Email,Bengaluru Hub,Technical Support,Escalated,No,Yes,2026-04-25 06:03:07
+TKT0065,CUST9829,ORD69252,Jeans,Wrong Item,I received the wrong Jeans in my package.,Critical,Neutral,Email,Delhi Store,Technical Support,In Progress,Yes,Yes,2026-04-24 10:03:07
+TKT0066,CUST6451,ORD43659,Shoes,Stock Issue,Stock mismatch detected for Shoes.,Low,Satisfied,Chat,Chennai Store,Payment Support,Resolved,No,Yes,2026-04-27 14:03:07
+TKT0067,CUST4223,ORD56299,Bluetooth Speaker,Damaged Item,My Bluetooth Speaker was delivered in broken condition.,Medium,Satisfied,Email,Pune Warehouse,Payment Support,Escalated,Yes,No,2026-05-13 11:03:07
+TKT0068,CUST5504,ORD68832,Bluetooth Speaker,App Issue,Unable to place Bluetooth Speaker order through app.,Medium,Satisfied,Email,Delhi Store,Payment Support,Resolved,No,Yes,2026-05-01 06:03:07
+TKT0069,CUST2385,ORD99184,Headphones,Order Delay,Shipment tracking for my Headphones has not updated.,Medium,Angry,Chat,Delhi Store,Technical Support,In Progress,Yes,No,2026-05-23 21:03:07
+TKT0070,CUST4113,ORD26461,Tablet,Order Delay,The delivery for my Tablet is delayed by several days.,Medium,Angry,Chat,Delhi Store,Logistics Team,In Progress,No,Yes,2026-04-24 00:03:07
+TKT0071,CUST2321,ORD40741,Tablet,Order Delay,The delivery for my Tablet is delayed by several days.,Medium,Frustrated,Email,Pune Warehouse,Logistics Team,Open,Yes,Yes,2026-05-19 16:03:07
+TKT0072,CUST5940,ORD93770,Headphones,App Issue,The app crashes while purchasing Headphones.,Low,Neutral,Phone,Hyderabad Hub,Logistics Team,In Progress,Yes,No,2026-04-28 20:03:07
+TKT0073,CUST5592,ORD16367,Jeans,Wrong Item,I received the wrong Jeans in my package.,High,Neutral,Chat,Hyderabad Hub,Payment Support,Resolved,Yes,Yes,2026-05-09 01:03:07
+TKT0074,CUST2390,ORD56667,Backpack,Cancellation Issue,Cancellation request for Backpack is not processed.,High,Angry,Phone,Chennai Store,Warehouse Operations,Resolved,Yes,No,2026-05-22 23:03:07
+TKT0075,CUST4534,ORD11639,Smartwatch,App Issue,Checkout page freezes for Smartwatch order.,High,Frustrated,Chat,Bengaluru Hub,Technical Support,Resolved,No,No,2026-04-26 09:03:07
+TKT0076,CUST3516,ORD66589,Backpack,Payment Issue,Payment issue occurred during checkout for Backpack.,Medium,Angry,Chat,Chennai Store,Technical Support,In Progress,Yes,Yes,2026-05-11 11:03:07
+TKT0077,CUST8704,ORD76975,Jeans,App Issue,Retail website not responding during Jeans purchase.,High,Angry,Mobile App,Hyderabad Hub,Logistics Team,Resolved,No,Yes,2026-05-21 01:03:07
+TKT0078,CUST4475,ORD49629,Wireless Mouse,Stock Issue,Stock mismatch detected for Wireless Mouse.,Medium,Neutral,Email,Bengaluru Hub,Customer Support,Escalated,No,No,2026-05-04 22:03:07
+TKT0079,CUST9619,ORD87774,Jeans,Damaged Item,My Jeans was delivered in broken condition.,Medium,Angry,Phone,Mumbai Warehouse,Warehouse Operations,In Progress,Yes,Yes,2026-05-02 01:03:07
+TKT0080,CUST2598,ORD87507,Shoes,Payment Issue,Transaction completed but Shoes order was not placed.,Critical,Satisfied,Phone,Delhi Store,Customer Support,Open,Yes,Yes,2026-05-11 22:03:07
+TKT0081,CUST5213,ORD32428,Mobile Charger,Wrong Item,A different item was delivered instead of Mobile Charger.,Low,Angry,Phone,Bengaluru Hub,Technical Support,Resolved,Yes,Yes,2026-05-02 06:03:07
+TKT0082,CUST2259,ORD96623,Mobile Charger,Damaged Item,The Mobile Charger arrived damaged and unusable.,High,Satisfied,Phone,Pune Warehouse,Logistics Team,In Progress,Yes,No,2026-04-30 23:03:07
+TKT0083,CUST6642,ORD23481,Headphones,Refund Issue,Refund for my Headphones has not been credited.,Medium,Angry,Mobile App,Hyderabad Hub,Payment Support,Escalated,No,Yes,2026-05-13 04:03:07
+TKT0084,CUST5211,ORD12124,Headphones,Cancellation Issue,Cancellation request for Headphones is not processed.,High,Satisfied,Mobile App,Hyderabad Hub,Customer Support,In Progress,Yes,Yes,2026-05-15 07:03:07
+TKT0085,CUST2226,ORD72092,Bluetooth Speaker,Order Delay,The delivery for my Bluetooth Speaker is delayed by several days.,Low,Frustrated,Phone,Hyderabad Hub,Payment Support,In Progress,No,Yes,2026-05-06 10:03:07
+TKT0086,CUST9325,ORD52859,Jeans,Refund Issue,Refund status for Jeans has not been updated.,Medium,Satisfied,Mobile App,Delhi Store,Payment Support,Resolved,Yes,Yes,2026-05-24 06:03:07
+TKT0087,CUST5785,ORD32292,Headphones,Refund Issue,Refund status for Headphones has not been updated.,Critical,Frustrated,Email,Bengaluru Hub,Customer Support,In Progress,No,Yes,2026-05-23 04:03:07
+TKT0088,CUST2875,ORD30793,Laptop Bag,Stock Issue,Laptop Bag was unavailable after order placement.,Low,Satisfied,Chat,Hyderabad Hub,Payment Support,Escalated,Yes,No,2026-05-17 10:03:07
+TKT0089,CUST5028,ORD87104,Wireless Mouse,Stock Issue,Wireless Mouse was shown available but later became out of stock.,Medium,Angry,Phone,Chennai Store,Logistics Team,In Progress,Yes,No,2026-04-30 11:03:07
+TKT0090,CUST8526,ORD51831,Shoes,App Issue,Retail website not responding during Shoes purchase.,Low,Angry,Phone,Delhi Store,Logistics Team,In Progress,No,Yes,2026-05-01 15:03:07
+TKT0091,CUST5082,ORD99829,Smartwatch,Order Delay,My order for Smartwatch has not been delivered yet.,Critical,Angry,Email,Delhi Store,Logistics Team,Resolved,Yes,No,2026-05-20 20:03:07
+TKT0092,CUST8042,ORD59032,Headphones,Stock Issue,Headphones was unavailable after order placement.,Low,Frustrated,Chat,Bengaluru Hub,Payment Support,In Progress,Yes,Yes,2026-05-11 04:03:07
+TKT0093,CUST9827,ORD32983,Jeans,Order Delay,I am still waiting for my Jeans order.,Critical,Satisfied,Phone,Pune Warehouse,Payment Support,In Progress,No,Yes,2026-05-12 01:03:07
+TKT0094,CUST8807,ORD31494,Mobile Charger,Payment Issue,Amount deducted for Mobile Charger but no order confirmation received.,Low,Satisfied,Phone,Hyderabad Hub,Customer Support,In Progress,Yes,No,2026-04-30 00:03:07
+TKT0095,CUST4379,ORD35676,Laptop Bag,Wrong Item,A different item was delivered instead of Laptop Bag.,High,Angry,Chat,Hyderabad Hub,Warehouse Operations,In Progress,Yes,No,2026-04-24 03:03:07
+TKT0096,CUST8080,ORD67444,Laptop Bag,Stock Issue,Stock mismatch detected for Laptop Bag.,High,Angry,Chat,Delhi Store,Warehouse Operations,In Progress,No,Yes,2026-05-07 17:03:07
+TKT0097,CUST3150,ORD78293,Jeans,Refund Issue,Refund status for Jeans has not been updated.,Medium,Satisfied,Chat,Bengaluru Hub,Warehouse Operations,Escalated,Yes,No,2026-05-17 10:03:07
+TKT0098,CUST4200,ORD50264,Mobile Charger,Refund Issue,Refund for my Mobile Charger has not been credited.,Medium,Satisfied,Chat,Mumbai Warehouse,Logistics Team,Resolved,No,Yes,2026-05-19 20:03:07
+TKT0099,CUST3132,ORD41967,Laptop Bag,Refund Issue,Refund status for Laptop Bag has not been updated.,Low,Satisfied,Email,Pune Warehouse,Technical Support,In Progress,No,Yes,2026-05-15 06:03:07
+TKT0100,CUST3978,ORD23694,Jeans,Order Delay,The delivery for my Jeans is delayed by several days.,Low,Neutral,Email,Mumbai Warehouse,Payment Support,Open,Yes,No,2026-05-09 02:03:07
+TKT0101,CUST3592,ORD81800,Tablet,Refund Issue,I returned the Tablet but refund is not processed.,Critical,Frustrated,Mobile App,Pune Warehouse,Payment Support,In Progress,No,Yes,2026-05-02 01:03:07
+TKT0102,CUST6364,ORD23267,Laptop Bag,Order Delay,My order for Laptop Bag has not been delivered yet.,Medium,Neutral,Email,Mumbai Warehouse,Logistics Team,Resolved,No,Yes,2026-04-25 12:03:07
+TKT0103,CUST7586,ORD97496,Shoes,App Issue,Unable to place Shoes order through app.,Medium,Neutral,Email,Pune Warehouse,Technical Support,Open,Yes,Yes,2026-04-24 23:03:07
+TKT0104,CUST8936,ORD23983,Smartwatch,Cancellation Issue,Order cancellation failed for Smartwatch.,High,Frustrated,Email,Hyderabad Hub,Payment Support,Escalated,No,No,2026-05-21 16:03:07
+TKT0105,CUST2576,ORD39442,Wireless Mouse,App Issue,Checkout page freezes for Wireless Mouse order.,Low,Frustrated,Mobile App,Mumbai Warehouse,Payment Support,In Progress,Yes,No,2026-05-18 00:03:07
+TKT0106,CUST1877,ORD44232,Jeans,Refund Issue,Refund for my Jeans has not been credited.,High,Neutral,Mobile App,Delhi Store,Logistics Team,Resolved,Yes,Yes,2026-05-07 13:03:07
+TKT0107,CUST6421,ORD38103,Backpack,Damaged Item,The packaging for Backpack was damaged.,Medium,Satisfied,Email,Mumbai Warehouse,Customer Support,Open,No,No,2026-05-03 06:03:07
+TKT0108,CUST4983,ORD34634,Bluetooth Speaker,Refund Issue,I returned the Bluetooth Speaker but refund is not processed.,High,Angry,Mobile App,Delhi Store,Warehouse Operations,Escalated,Yes,No,2026-04-27 02:03:07
+TKT0109,CUST1609,ORD79542,Smartwatch,Order Delay,The delivery for my Smartwatch is delayed by several days.,Low,Neutral,Chat,Bengaluru Hub,Customer Support,In Progress,Yes,No,2026-05-03 13:03:07
+TKT0110,CUST3640,ORD96756,Mobile Charger,Payment Issue,Payment issue occurred during checkout for Mobile Charger.,Critical,Satisfied,Email,Chennai Store,Logistics Team,Resolved,No,No,2026-05-23 01:03:07
+TKT0111,CUST9341,ORD67123,Laptop Bag,Refund Issue,Refund for my Laptop Bag has not been credited.,High,Satisfied,Mobile App,Hyderabad Hub,Logistics Team,Open,Yes,Yes,2026-05-01 12:03:07
+TKT0112,CUST8934,ORD40224,Jeans,Refund Issue,My refund for Jeans is still pending.,High,Neutral,Chat,Delhi Store,Payment Support,Escalated,Yes,No,2026-05-24 05:03:07
+TKT0113,CUST7420,ORD44996,Tablet,Wrong Item,The delivered Tablet does not match my order.,Low,Neutral,Chat,Delhi Store,Logistics Team,In Progress,No,No,2026-05-08 19:03:07
+TKT0114,CUST4574,ORD86918,Tablet,Payment Issue,Payment was deducted while ordering Tablet but order failed.,Low,Satisfied,Phone,Bengaluru Hub,Customer Support,Resolved,No,No,2026-05-08 13:03:07
+TKT0115,CUST4510,ORD18334,Backpack,Order Delay,I am still waiting for my Backpack order.,High,Satisfied,Mobile App,Chennai Store,Payment Support,Open,Yes,Yes,2026-05-11 06:03:07
+TKT0116,CUST6102,ORD74244,Mobile Charger,Damaged Item,My Mobile Charger was delivered in broken condition.,Medium,Satisfied,Mobile App,Hyderabad Hub,Customer Support,Resolved,No,No,2026-05-12 09:03:07
+TKT0117,CUST9227,ORD99312,Smartwatch,Stock Issue,Stock mismatch detected for Smartwatch.,High,Frustrated,Chat,Pune Warehouse,Payment Support,Escalated,No,No,2026-05-13 13:03:07
+TKT0118,CUST7229,ORD66659,Backpack,Stock Issue,Backpack was shown available but later became out of stock.,Critical,Satisfied,Chat,Pune Warehouse,Payment Support,Resolved,Yes,No,2026-05-11 20:03:07
+TKT0119,CUST9929,ORD28291,Wireless Mouse,Refund Issue,Refund for my Wireless Mouse has not been credited.,Low,Neutral,Mobile App,Hyderabad Hub,Logistics Team,Resolved,No,No,2026-05-19 16:03:07
+TKT0120,CUST7276,ORD69994,Laptop Bag,Refund Issue,My refund for Laptop Bag is still pending.,Critical,Angry,Phone,Bengaluru Hub,Payment Support,Open,Yes,No,2026-05-05 17:03:07
+TKT0121,CUST1872,ORD67682,Shoes,Refund Issue,I returned the Shoes but refund is not processed.,High,Neutral,Mobile App,Chennai Store,Technical Support,In Progress,No,Yes,2026-05-18 02:03:07
+TKT0122,CUST7872,ORD59972,Jeans,Stock Issue,Jeans was shown available but later became out of stock.,Critical,Angry,Email,Bengaluru Hub,Customer Support,Escalated,No,Yes,2026-04-26 16:03:07
+TKT0123,CUST1603,ORD35500,Wireless Mouse,Damaged Item,The Wireless Mouse arrived damaged and unusable.,High,Neutral,Phone,Delhi Store,Customer Support,Resolved,Yes,Yes,2026-05-22 05:03:07
+TKT0124,CUST3601,ORD62466,Mobile Charger,App Issue,Unable to place Mobile Charger order through app.,Medium,Frustrated,Phone,Bengaluru Hub,Technical Support,Open,No,No,2026-05-17 20:03:07
+TKT0125,CUST7100,ORD59964,Bluetooth Speaker,Damaged Item,My Bluetooth Speaker was delivered in broken condition.,Medium,Angry,Mobile App,Pune Warehouse,Logistics Team,Resolved,No,No,2026-05-04 08:03:07
+TKT0126,CUST2326,ORD18200,Wireless Mouse,Cancellation Issue,Order cancellation failed for Wireless Mouse.,High,Angry,Chat,Bengaluru Hub,Logistics Team,Escalated,No,Yes,2026-05-09 03:03:07
+TKT0127,CUST5667,ORD90102,Tablet,Order Delay,I am still waiting for my Tablet order.,High,Satisfied,Email,Pune Warehouse,Payment Support,In Progress,Yes,Yes,2026-05-17 06:03:07
+TKT0128,CUST6759,ORD19883,Laptop Bag,Order Delay,I am still waiting for my Laptop Bag order.,Medium,Angry,Phone,Bengaluru Hub,Warehouse Operations,Resolved,Yes,Yes,2026-05-16 07:03:07
+TKT0129,CUST4121,ORD81296,Mobile Charger,Payment Issue,Amount deducted for Mobile Charger but no order confirmation received.,Critical,Frustrated,Mobile App,Chennai Store,Warehouse Operations,Resolved,Yes,No,2026-05-15 00:03:07
+TKT0130,CUST9491,ORD17951,Bluetooth Speaker,Order Delay,The delivery for my Bluetooth Speaker is delayed by several days.,Critical,Satisfied,Chat,Hyderabad Hub,Logistics Team,Resolved,No,No,2026-05-07 21:03:07
+TKT0131,CUST9106,ORD69041,Backpack,Wrong Item,A different item was delivered instead of Backpack.,High,Satisfied,Email,Pune Warehouse,Technical Support,Escalated,No,No,2026-05-10 23:03:07
+TKT0132,CUST1861,ORD90205,Laptop Bag,Damaged Item,My Laptop Bag was delivered in broken condition.,High,Satisfied,Mobile App,Hyderabad Hub,Warehouse Operations,Escalated,Yes,Yes,2026-05-20 06:03:07
+TKT0133,CUST8491,ORD42228,Smartwatch,Refund Issue,Refund status for Smartwatch has not been updated.,Low,Angry,Chat,Hyderabad Hub,Logistics Team,Escalated,No,Yes,2026-05-12 15:03:07
+TKT0134,CUST8437,ORD22244,Jeans,Cancellation Issue,Order cancellation failed for Jeans.,Medium,Angry,Email,Delhi Store,Payment Support,Escalated,Yes,Yes,2026-05-19 01:03:07
+TKT0135,CUST1279,ORD32177,Tablet,Damaged Item,The delivered Tablet is defective.,Low,Angry,Mobile App,Bengaluru Hub,Payment Support,Resolved,Yes,No,2026-05-13 05:03:07
+TKT0136,CUST9653,ORD90124,Jeans,Stock Issue,Inventory issue occurred while purchasing Jeans.,Medium,Neutral,Mobile App,Chennai Store,Technical Support,Resolved,Yes,No,2026-04-26 10:03:07
+TKT0137,CUST1881,ORD72224,Tablet,Refund Issue,Refund status for Tablet has not been updated.,Critical,Satisfied,Chat,Pune Warehouse,Payment Support,Resolved,No,No,2026-05-03 15:03:07
+TKT0138,CUST6284,ORD48606,Backpack,Wrong Item,A different item was delivered instead of Backpack.,Low,Angry,Mobile App,Mumbai Warehouse,Customer Support,In Progress,Yes,No,2026-05-16 22:03:07
+TKT0139,CUST9534,ORD42095,Smartwatch,Damaged Item,My Smartwatch was delivered in broken condition.,Medium,Satisfied,Mobile App,Bengaluru Hub,Customer Support,Escalated,No,Yes,2026-05-01 23:03:07
+TKT0140,CUST3578,ORD57058,Shoes,Refund Issue,My refund for Shoes is still pending.,Critical,Frustrated,Phone,Bengaluru Hub,Customer Support,Escalated,Yes,Yes,2026-05-14 05:03:07
+TKT0141,CUST5777,ORD78964,Headphones,Stock Issue,Headphones was shown available but later became out of stock.,Low,Angry,Mobile App,Chennai Store,Payment Support,Escalated,No,Yes,2026-04-28 14:03:07
+TKT0142,CUST9499,ORD75820,Laptop Bag,Order Delay,The delivery for my Laptop Bag is delayed by several days.,High,Satisfied,Phone,Pune Warehouse,Payment Support,Open,No,Yes,2026-05-05 08:03:07
+TKT0143,CUST7637,ORD89998,Wireless Mouse,Order Delay,My order for Wireless Mouse has not been delivered yet.,Low,Neutral,Phone,Delhi Store,Technical Support,Open,Yes,Yes,2026-05-04 08:03:07
+TKT0144,CUST5073,ORD17692,Mobile Charger,Cancellation Issue,I want to cancel Mobile Charger but the order is still open.,High,Angry,Phone,Bengaluru Hub,Payment Support,Escalated,Yes,No,2026-05-09 21:03:07
+TKT0145,CUST9620,ORD42577,Laptop Bag,Damaged Item,The Laptop Bag arrived damaged and unusable.,Low,Frustrated,Email,Hyderabad Hub,Customer Support,Open,Yes,Yes,2026-05-02 07:03:07
+TKT0146,CUST1352,ORD24691,Shoes,Stock Issue,Shoes was unavailable after order placement.,Low,Satisfied,Chat,Hyderabad Hub,Logistics Team,Escalated,No,Yes,2026-04-26 16:03:07
+TKT0147,CUST4255,ORD32225,Wireless Mouse,Order Delay,My order for Wireless Mouse has not been delivered yet.,Low,Neutral,Email,Mumbai Warehouse,Logistics Team,Open,Yes,Yes,2026-05-19 14:03:07
+TKT0148,CUST9832,ORD14552,Backpack,Stock Issue,Inventory issue occurred while purchasing Backpack.,Low,Angry,Mobile App,Bengaluru Hub,Warehouse Operations,Resolved,Yes,No,2026-05-10 23:03:07
+TKT0149,CUST3347,ORD83891,Jeans,Stock Issue,Stock mismatch detected for Jeans.,Critical,Neutral,Mobile App,Mumbai Warehouse,Technical Support,Open,No,No,2026-05-15 11:03:07
+TKT0150,CUST7221,ORD51826,Shoes,Cancellation Issue,Cancellation request for Shoes is not processed.,Low,Frustrated,Email,Pune Warehouse,Warehouse Operations,Resolved,No,Yes,2026-05-11 14:03:07
+TKT0151,CUST4891,ORD80880,Bluetooth Speaker,Cancellation Issue,I cancelled my Bluetooth Speaker order but it is still active.,Low,Frustrated,Mobile App,Chennai Store,Customer Support,Resolved,No,No,2026-05-01 23:03:07
+TKT0152,CUST5239,ORD48227,Wireless Mouse,Wrong Item,I received the wrong Wireless Mouse in my package.,Low,Satisfied,Phone,Hyderabad Hub,Technical Support,Resolved,No,Yes,2026-05-24 02:03:07
+TKT0153,CUST7506,ORD45809,Wireless Mouse,Payment Issue,Payment was deducted while ordering Wireless Mouse but order failed.,Medium,Satisfied,Chat,Bengaluru Hub,Customer Support,Escalated,No,No,2026-04-28 23:03:07
+TKT0154,CUST6986,ORD45081,Wireless Mouse,App Issue,The app crashes while purchasing Wireless Mouse.,Critical,Satisfied,Mobile App,Bengaluru Hub,Logistics Team,Resolved,Yes,No,2026-05-23 22:03:07
+TKT0155,CUST1139,ORD96521,Shoes,Damaged Item,The packaging for Shoes was damaged.,High,Frustrated,Chat,Chennai Store,Logistics Team,Escalated,Yes,Yes,2026-05-24 10:03:07
+TKT0156,CUST6560,ORD90890,Tablet,Stock Issue,Stock mismatch detected for Tablet.,High,Frustrated,Chat,Bengaluru Hub,Technical Support,Open,No,No,2026-05-13 08:03:07
+TKT0157,CUST7571,ORD33860,Headphones,Payment Issue,Amount deducted for Headphones but no order confirmation received.,Low,Angry,Chat,Mumbai Warehouse,Technical Support,Escalated,No,Yes,2026-04-30 03:03:07
+TKT0158,CUST4955,ORD15871,Headphones,App Issue,The app crashes while purchasing Headphones.,Critical,Satisfied,Email,Pune Warehouse,Warehouse Operations,Escalated,No,Yes,2026-05-06 18:03:07
+TKT0159,CUST8511,ORD32260,Shoes,App Issue,Retail website not responding during Shoes purchase.,Low,Frustrated,Phone,Chennai Store,Payment Support,Escalated,No,No,2026-05-18 01:03:07
+TKT0160,CUST7285,ORD67661,Mobile Charger,Cancellation Issue,I want to cancel Mobile Charger but the order is still open.,High,Frustrated,Mobile App,Chennai Store,Logistics Team,In Progress,No,No,2026-05-21 07:03:07
+TKT0161,CUST1941,ORD86689,Smartwatch,Stock Issue,Stock mismatch detected for Smartwatch.,High,Frustrated,Email,Pune Warehouse,Logistics Team,Open,Yes,Yes,2026-04-23 13:03:07
+TKT0162,CUST7274,ORD25912,Smartwatch,Wrong Item,I received the wrong Smartwatch in my package.,Medium,Frustrated,Email,Delhi Store,Logistics Team,Resolved,Yes,Yes,2026-05-05 21:03:07
+TKT0163,CUST2633,ORD75461,Jeans,Cancellation Issue,Cancellation request for Jeans is not processed.,High,Angry,Mobile App,Bengaluru Hub,Customer Support,Resolved,Yes,Yes,2026-05-18 20:03:07
+TKT0164,CUST2695,ORD38583,Smartwatch,App Issue,The app crashes while purchasing Smartwatch.,High,Angry,Email,Hyderabad Hub,Technical Support,Resolved,No,No,2026-05-17 14:03:07
+TKT0165,CUST1876,ORD46662,Smartwatch,App Issue,Unable to place Smartwatch order through app.,Medium,Angry,Mobile App,Bengaluru Hub,Technical Support,Escalated,Yes,Yes,2026-04-25 12:03:07
+TKT0166,CUST3064,ORD67583,Shoes,Stock Issue,Shoes was unavailable after order placement.,High,Frustrated,Mobile App,Chennai Store,Customer Support,In Progress,Yes,Yes,2026-05-11 12:03:07
+TKT0167,CUST4183,ORD18071,Shoes,Refund Issue,Refund for my Shoes has not been credited.,High,Angry,Chat,Delhi Store,Logistics Team,Resolved,No,No,2026-04-29 18:03:07
+TKT0168,CUST7797,ORD28812,Wireless Mouse,Wrong Item,The Wireless Mouse received is incorrect.,Medium,Angry,Phone,Chennai Store,Payment Support,Open,Yes,No,2026-05-09 21:03:07
+TKT0169,CUST2411,ORD82900,Mobile Charger,App Issue,Checkout page freezes for Mobile Charger order.,Medium,Angry,Email,Pune Warehouse,Customer Support,Resolved,Yes,No,2026-04-27 09:03:07
+TKT0170,CUST8222,ORD77235,Wireless Mouse,Refund Issue,Refund for my Wireless Mouse has not been credited.,Low,Neutral,Phone,Chennai Store,Technical Support,Open,No,No,2026-05-15 09:03:07
+TKT0171,CUST2893,ORD13415,Bluetooth Speaker,Damaged Item,The delivered Bluetooth Speaker is defective.,Critical,Angry,Chat,Pune Warehouse,Logistics Team,In Progress,No,No,2026-05-12 11:03:07
+TKT0172,CUST7611,ORD71926,Wireless Mouse,Payment Issue,Payment issue occurred during checkout for Wireless Mouse.,Low,Angry,Mobile App,Bengaluru Hub,Customer Support,Open,No,Yes,2026-05-17 20:03:07
+TKT0173,CUST6327,ORD54906,Tablet,Wrong Item,The Tablet received is incorrect.,Low,Frustrated,Mobile App,Mumbai Warehouse,Technical Support,In Progress,Yes,No,2026-05-01 09:03:07
+TKT0174,CUST8491,ORD50415,Mobile Charger,Damaged Item,My Mobile Charger was delivered in broken condition.,High,Angry,Phone,Chennai Store,Payment Support,Resolved,No,Yes,2026-05-24 08:03:07
+TKT0175,CUST6290,ORD12716,Bluetooth Speaker,Wrong Item,A different item was delivered instead of Bluetooth Speaker.,Low,Satisfied,Chat,Bengaluru Hub,Payment Support,In Progress,No,No,2026-05-14 19:03:07
+TKT0176,CUST1328,ORD82457,Laptop Bag,Stock Issue,Laptop Bag was shown available but later became out of stock.,High,Angry,Mobile App,Pune Warehouse,Payment Support,Resolved,Yes,Yes,2026-05-11 01:03:07
+TKT0177,CUST8647,ORD88954,Smartwatch,Payment Issue,Amount deducted for Smartwatch but no order confirmation received.,Critical,Angry,Chat,Hyderabad Hub,Payment Support,In Progress,No,No,2026-05-19 17:03:07
+TKT0178,CUST9499,ORD38794,Backpack,Stock Issue,Backpack was unavailable after order placement.,High,Angry,Phone,Pune Warehouse,Technical Support,Open,Yes,Yes,2026-05-13 20:03:07
+TKT0179,CUST8152,ORD97751,Smartwatch,Wrong Item,A different item was delivered instead of Smartwatch.,Medium,Neutral,Phone,Mumbai Warehouse,Payment Support,Escalated,Yes,No,2026-05-03 02:03:07
+TKT0180,CUST1918,ORD56141,Mobile Charger,Payment Issue,Payment was deducted while ordering Mobile Charger but order failed.,Critical,Satisfied,Phone,Hyderabad Hub,Warehouse Operations,Escalated,Yes,No,2026-05-21 15:03:07
+TKT0181,CUST9570,ORD47888,Tablet,App Issue,Retail website not responding during Tablet purchase.,Medium,Neutral,Email,Bengaluru Hub,Customer Support,Open,No,No,2026-05-10 09:03:07
+TKT0182,CUST2687,ORD36374,Laptop Bag,Wrong Item,A different item was delivered instead of Laptop Bag.,Critical,Neutral,Mobile App,Chennai Store,Warehouse Operations,Resolved,Yes,Yes,2026-04-28 18:03:07
+TKT0183,CUST2008,ORD71824,Laptop Bag,Payment Issue,Transaction completed but Laptop Bag order was not placed.,Medium,Frustrated,Chat,Chennai Store,Payment Support,Resolved,No,No,2026-05-10 20:03:07
+TKT0184,CUST5302,ORD72636,Tablet,Wrong Item,The delivered Tablet does not match my order.,Low,Satisfied,Chat,Mumbai Warehouse,Customer Support,Resolved,No,Yes,2026-05-15 06:03:07
+TKT0185,CUST8866,ORD28464,Smartwatch,App Issue,Checkout page freezes for Smartwatch order.,High,Frustrated,Phone,Pune Warehouse,Technical Support,In Progress,No,No,2026-05-22 09:03:07
+TKT0186,CUST3645,ORD84896,Shoes,Cancellation Issue,I cancelled my Shoes order but it is still active.,Critical,Frustrated,Mobile App,Bengaluru Hub,Payment Support,Open,Yes,No,2026-05-04 18:03:07
+TKT0187,CUST4085,ORD72967,Laptop Bag,App Issue,Checkout page freezes for Laptop Bag order.,Low,Satisfied,Mobile App,Bengaluru Hub,Logistics Team,Open,Yes,Yes,2026-05-18 17:03:07
+TKT0188,CUST6774,ORD41800,Smartwatch,Refund Issue,I returned the Smartwatch but refund is not processed.,Medium,Satisfied,Chat,Bengaluru Hub,Logistics Team,Open,No,No,2026-04-28 03:03:07
+TKT0189,CUST4768,ORD51645,Jeans,Order Delay,I am still waiting for my Jeans order.,Critical,Neutral,Email,Hyderabad Hub,Customer Support,Escalated,No,No,2026-05-12 17:03:07
+TKT0190,CUST5549,ORD41619,Laptop Bag,Refund Issue,My refund for Laptop Bag is still pending.,Low,Angry,Mobile App,Mumbai Warehouse,Logistics Team,Escalated,Yes,Yes,2026-05-01 11:03:07
+TKT0191,CUST6254,ORD61844,Bluetooth Speaker,Order Delay,I am still waiting for my Bluetooth Speaker order.,Critical,Angry,Mobile App,Chennai Store,Logistics Team,In Progress,Yes,Yes,2026-05-12 16:03:07
+TKT0192,CUST7119,ORD92155,Shoes,Order Delay,My order for Shoes has not been delivered yet.,High,Neutral,Email,Hyderabad Hub,Warehouse Operations,Resolved,No,Yes,2026-05-04 20:03:07
+TKT0193,CUST3430,ORD96132,Tablet,Cancellation Issue,Order cancellation failed for Tablet.,High,Frustrated,Phone,Bengaluru Hub,Technical Support,Resolved,No,No,2026-05-15 11:03:07
+TKT0194,CUST2342,ORD36989,Smartwatch,App Issue,The app crashes while purchasing Smartwatch.,High,Angry,Phone,Bengaluru Hub,Warehouse Operations,In Progress,No,Yes,2026-05-17 04:03:07
+TKT0195,CUST3483,ORD84696,Shoes,Refund Issue,Refund status for Shoes has not been updated.,High,Neutral,Chat,Pune Warehouse,Payment Support,Resolved,Yes,Yes,2026-05-23 14:03:07
+TKT0196,CUST7969,ORD14629,Laptop Bag,Payment Issue,Payment issue occurred during checkout for Laptop Bag.,Low,Satisfied,Chat,Chennai Store,Payment Support,Escalated,No,No,2026-05-13 07:03:07
+TKT0197,CUST3899,ORD92546,Mobile Charger,Order Delay,The delivery for my Mobile Charger is delayed by several days.,Critical,Neutral,Chat,Bengaluru Hub,Warehouse Operations,Open,No,No,2026-05-20 22:03:07
+TKT0198,CUST4685,ORD30746,Backpack,Cancellation Issue,Order cancellation failed for Backpack.,High,Satisfied,Phone,Bengaluru Hub,Payment Support,Escalated,Yes,No,2026-05-05 18:03:07
+TKT0199,CUST3706,ORD27463,Smartwatch,Order Delay,The delivery for my Smartwatch is delayed by several days.,Low,Frustrated,Phone,Mumbai Warehouse,Customer Support,Resolved,Yes,Yes,2026-05-21 16:03:07
+TKT0200,CUST2020,ORD66043,Backpack,Stock Issue,Stock mismatch detected for Backpack.,Low,Satisfied,Email,Bengaluru Hub,Customer Support,Escalated,No,No,2026-05-03 11:03:07
+TKT0201,CUST8043,ORD47805,Bluetooth Speaker,Refund Issue,My refund for Bluetooth Speaker is still pending.,Critical,Neutral,Phone,Delhi Store,Warehouse Operations,Escalated,No,No,2026-05-15 17:03:07
+TKT0202,CUST8453,ORD45954,Mobile Charger,Order Delay,Shipment tracking for my Mobile Charger has not updated.,Medium,Satisfied,Phone,Hyderabad Hub,Technical Support,Open,Yes,No,2026-05-18 23:03:07
+TKT0203,CUST2468,ORD90378,Wireless Mouse,Damaged Item,The delivered Wireless Mouse is defective.,High,Neutral,Mobile App,Bengaluru Hub,Customer Support,In Progress,No,Yes,2026-05-21 17:03:07
+TKT0204,CUST2576,ORD95492,Jeans,Stock Issue,Jeans was shown available but later became out of stock.,Low,Neutral,Chat,Bengaluru Hub,Technical Support,Resolved,No,Yes,2026-04-29 21:03:07
+TKT0205,CUST9166,ORD13322,Smartwatch,Payment Issue,Amount deducted for Smartwatch but no order confirmation received.,Critical,Angry,Phone,Delhi Store,Warehouse Operations,Resolved,No,No,2026-05-08 03:03:07
+TKT0206,CUST1482,ORD60986,Mobile Charger,App Issue,Retail website not responding during Mobile Charger purchase.,High,Angry,Phone,Chennai Store,Warehouse Operations,Escalated,Yes,Yes,2026-05-01 07:03:07
+TKT0207,CUST8484,ORD14421,Mobile Charger,Refund Issue,I returned the Mobile Charger but refund is not processed.,Low,Frustrated,Email,Pune Warehouse,Technical Support,Resolved,No,No,2026-05-20 20:03:07
+TKT0208,CUST6477,ORD85172,Jeans,Order Delay,My order for Jeans has not been delivered yet.,Critical,Angry,Mobile App,Bengaluru Hub,Logistics Team,In Progress,Yes,Yes,2026-05-18 00:03:07
+TKT0209,CUST4091,ORD57736,Shoes,Payment Issue,Payment issue occurred during checkout for Shoes.,High,Neutral,Chat,Hyderabad Hub,Customer Support,Open,No,No,2026-05-12 11:03:07
+TKT0210,CUST3937,ORD39657,Bluetooth Speaker,Cancellation Issue,Cancellation request for Bluetooth Speaker is not processed.,Critical,Angry,Mobile App,Mumbai Warehouse,Logistics Team,In Progress,No,Yes,2026-05-10 14:03:07
+TKT0211,CUST3586,ORD84596,Backpack,Stock Issue,Backpack was unavailable after order placement.,Medium,Angry,Email,Pune Warehouse,Logistics Team,In Progress,No,Yes,2026-05-14 09:03:07
+TKT0212,CUST6380,ORD81869,Jeans,App Issue,Retail website not responding during Jeans purchase.,Medium,Frustrated,Phone,Hyderabad Hub,Customer Support,Resolved,Yes,Yes,2026-05-15 18:03:07
+TKT0213,CUST3821,ORD15081,Bluetooth Speaker,Wrong Item,I received the wrong Bluetooth Speaker in my package.,Medium,Frustrated,Chat,Pune Warehouse,Technical Support,Open,Yes,Yes,2026-05-02 01:03:07
+TKT0214,CUST1266,ORD47326,Tablet,Refund Issue,Refund for my Tablet has not been credited.,Low,Neutral,Email,Delhi Store,Payment Support,Escalated,No,Yes,2026-04-30 07:03:07
+TKT0215,CUST5838,ORD31222,Wireless Mouse,Payment Issue,Transaction completed but Wireless Mouse order was not placed.,Medium,Frustrated,Phone,Delhi Store,Customer Support,In Progress,No,Yes,2026-05-07 17:03:07
+TKT0216,CUST4053,ORD50167,Laptop Bag,Order Delay,The delivery for my Laptop Bag is delayed by several days.,Critical,Frustrated,Email,Bengaluru Hub,Technical Support,In Progress,Yes,Yes,2026-05-10 00:03:07
+TKT0217,CUST6035,ORD11156,Bluetooth Speaker,Payment Issue,Payment was deducted while ordering Bluetooth Speaker but order failed.,Low,Angry,Mobile App,Hyderabad Hub,Customer Support,Escalated,Yes,Yes,2026-05-03 13:03:07
+TKT0218,CUST6148,ORD73141,Bluetooth Speaker,Wrong Item,I received the wrong Bluetooth Speaker in my package.,Critical,Satisfied,Email,Delhi Store,Warehouse Operations,In Progress,Yes,Yes,2026-04-30 05:03:07
+TKT0219,CUST2586,ORD98202,Shoes,Order Delay,My order for Shoes has not been delivered yet.,Low,Frustrated,Chat,Delhi Store,Warehouse Operations,Resolved,No,Yes,2026-04-25 11:03:07
+TKT0220,CUST6587,ORD77258,Laptop Bag,App Issue,The app crashes while purchasing Laptop Bag.,High,Satisfied,Mobile App,Hyderabad Hub,Warehouse Operations,Resolved,No,No,2026-05-17 06:03:07
+TKT0221,CUST3404,ORD70499,Wireless Mouse,Payment Issue,Payment issue occurred during checkout for Wireless Mouse.,Critical,Satisfied,Email,Delhi Store,Logistics Team,In Progress,No,Yes,2026-05-15 20:03:07
+TKT0222,CUST4731,ORD15830,Jeans,Stock Issue,Inventory issue occurred while purchasing Jeans.,Medium,Angry,Phone,Pune Warehouse,Customer Support,Resolved,Yes,No,2026-05-21 06:03:07
+TKT0223,CUST1566,ORD59002,Wireless Mouse,Damaged Item,The delivered Wireless Mouse is defective.,Medium,Angry,Chat,Hyderabad Hub,Technical Support,Open,No,Yes,2026-05-07 04:03:07
+TKT0224,CUST5248,ORD51145,Shoes,Wrong Item,The Shoes received is incorrect.,High,Frustrated,Mobile App,Pune Warehouse,Payment Support,In Progress,Yes,Yes,2026-05-04 10:03:07
+TKT0225,CUST6573,ORD26505,Mobile Charger,Cancellation Issue,Order cancellation failed for Mobile Charger.,High,Neutral,Email,Pune Warehouse,Technical Support,Resolved,No,No,2026-05-20 11:03:07
+TKT0226,CUST5195,ORD77789,Mobile Charger,Stock Issue,Mobile Charger was shown available but later became out of stock.,Low,Frustrated,Phone,Hyderabad Hub,Warehouse Operations,Escalated,Yes,No,2026-05-12 04:03:07
+TKT0227,CUST4975,ORD28121,Mobile Charger,Cancellation Issue,I cancelled my Mobile Charger order but it is still active.,High,Angry,Mobile App,Bengaluru Hub,Technical Support,Resolved,No,Yes,2026-05-18 00:03:07
+TKT0228,CUST9376,ORD98154,Headphones,Payment Issue,Amount deducted for Headphones but no order confirmation received.,Low,Frustrated,Chat,Chennai Store,Warehouse Operations,Resolved,No,No,2026-05-09 15:03:07
+TKT0229,CUST1805,ORD96670,Laptop Bag,Payment Issue,Payment issue occurred during checkout for Laptop Bag.,Low,Frustrated,Chat,Chennai Store,Technical Support,In Progress,Yes,Yes,2026-05-16 07:03:07
+TKT0230,CUST2602,ORD82047,Laptop Bag,Refund Issue,My refund for Laptop Bag is still pending.,Critical,Angry,Chat,Chennai Store,Warehouse Operations,Open,No,No,2026-05-01 17:03:07
+TKT0231,CUST1549,ORD81656,Wireless Mouse,Stock Issue,Wireless Mouse was shown available but later became out of stock.,High,Frustrated,Email,Hyderabad Hub,Technical Support,Resolved,Yes,No,2026-05-11 02:03:07
+TKT0232,CUST2040,ORD97830,Headphones,Wrong Item,I received the wrong Headphones in my package.,High,Neutral,Email,Pune Warehouse,Technical Support,Resolved,No,Yes,2026-05-03 14:03:07
+TKT0233,CUST9086,ORD28220,Smartwatch,Refund Issue,Refund for my Smartwatch has not been credited.,High,Angry,Email,Mumbai Warehouse,Warehouse Operations,Escalated,Yes,No,2026-05-01 00:03:07
+TKT0234,CUST2946,ORD52993,Mobile Charger,Cancellation Issue,Cancellation request for Mobile Charger is not processed.,Low,Angry,Email,Chennai Store,Customer Support,In Progress,Yes,No,2026-05-03 05:03:07
+TKT0235,CUST8590,ORD56145,Mobile Charger,Cancellation Issue,I want to cancel Mobile Charger but the order is still open.,Low,Satisfied,Mobile App,Delhi Store,Technical Support,Escalated,Yes,No,2026-05-04 05:03:07
+TKT0236,CUST9052,ORD17579,Laptop Bag,Order Delay,The delivery for my Laptop Bag is delayed by several days.,Critical,Angry,Mobile App,Mumbai Warehouse,Customer Support,Open,No,No,2026-05-21 19:03:07
+TKT0237,CUST4877,ORD66286,Backpack,Payment Issue,Amount deducted for Backpack but no order confirmation received.,Medium,Frustrated,Mobile App,Mumbai Warehouse,Warehouse Operations,Resolved,Yes,Yes,2026-05-23 17:03:07
+TKT0238,CUST3328,ORD86500,Jeans,Order Delay,Shipment tracking for my Jeans has not updated.,Critical,Satisfied,Mobile App,Delhi Store,Warehouse Operations,In Progress,Yes,No,2026-04-25 13:03:07
+TKT0239,CUST9244,ORD51455,Smartwatch,App Issue,Retail website not responding during Smartwatch purchase.,Critical,Neutral,Phone,Chennai Store,Warehouse Operations,In Progress,Yes,No,2026-04-29 22:03:07
+TKT0240,CUST2944,ORD22229,Laptop Bag,Order Delay,I am still waiting for my Laptop Bag order.,Critical,Angry,Mobile App,Pune Warehouse,Warehouse Operations,Resolved,Yes,Yes,2026-04-30 09:03:07
+TKT0241,CUST2313,ORD81838,Wireless Mouse,Order Delay,I am still waiting for my Wireless Mouse order.,Critical,Neutral,Mobile App,Delhi Store,Warehouse Operations,Resolved,No,Yes,2026-05-19 01:03:07
+TKT0242,CUST9678,ORD79469,Mobile Charger,Wrong Item,The Mobile Charger received is incorrect.,Low,Neutral,Mobile App,Mumbai Warehouse,Payment Support,Resolved,Yes,Yes,2026-05-18 08:03:07
+TKT0243,CUST9113,ORD89322,Headphones,Wrong Item,I received the wrong Headphones in my package.,Critical,Neutral,Email,Mumbai Warehouse,Technical Support,Escalated,Yes,No,2026-05-04 23:03:07
+TKT0244,CUST8364,ORD82767,Shoes,Order Delay,My order for Shoes has not been delivered yet.,Critical,Neutral,Mobile App,Pune Warehouse,Warehouse Operations,Escalated,Yes,Yes,2026-05-10 03:03:07
+TKT0245,CUST2139,ORD83575,Headphones,Stock Issue,Headphones was unavailable after order placement.,High,Frustrated,Email,Chennai Store,Technical Support,Open,No,No,2026-05-02 15:03:07
+TKT0246,CUST9943,ORD67436,Laptop Bag,Damaged Item,My Laptop Bag was delivered in broken condition.,High,Frustrated,Mobile App,Bengaluru Hub,Warehouse Operations,Escalated,No,No,2026-04-24 13:03:07
+TKT0247,CUST1259,ORD14076,Mobile Charger,Damaged Item,The packaging for Mobile Charger was damaged.,Critical,Satisfied,Email,Hyderabad Hub,Payment Support,Open,No,No,2026-05-23 08:03:07
+TKT0248,CUST5649,ORD10760,Laptop Bag,Order Delay,Shipment tracking for my Laptop Bag has not updated.,Critical,Satisfied,Email,Mumbai Warehouse,Logistics Team,Open,Yes,Yes,2026-05-02 17:03:07
+TKT0249,CUST2409,ORD82782,Backpack,Refund Issue,Refund for my Backpack has not been credited.,Critical,Frustrated,Chat,Delhi Store,Logistics Team,Escalated,Yes,No,2026-05-14 02:03:07
+TKT0250,CUST6233,ORD99665,Mobile Charger,Damaged Item,The packaging for Mobile Charger was damaged.,Medium,Neutral,Chat,Delhi Store,Warehouse Operations,In Progress,No,Yes,2026-04-30 02:03:07
+TKT0251,CUST3869,ORD19783,Shoes,Stock Issue,Shoes was shown available but later became out of stock.,Critical,Satisfied,Mobile App,Hyderabad Hub,Logistics Team,In Progress,Yes,Yes,2026-04-29 20:03:07
+TKT0252,CUST4663,ORD64016,Headphones,App Issue,Retail website not responding during Headphones purchase.,Medium,Satisfied,Mobile App,Chennai Store,Customer Support,In Progress,No,Yes,2026-04-30 01:03:07
+TKT0253,CUST4794,ORD58754,Smartwatch,Stock Issue,Smartwatch was shown available but later became out of stock.,Critical,Satisfied,Chat,Hyderabad Hub,Technical Support,Open,No,No,2026-05-18 07:03:07
+TKT0254,CUST2786,ORD32730,Jeans,Cancellation Issue,I cancelled my Jeans order but it is still active.,Low,Angry,Email,Pune Warehouse,Logistics Team,Escalated,Yes,Yes,2026-05-01 17:03:07
+TKT0255,CUST8442,ORD17323,Tablet,Order Delay,Shipment tracking for my Tablet has not updated.,Medium,Satisfied,Email,Hyderabad Hub,Payment Support,Resolved,Yes,Yes,2026-04-26 17:03:07
+TKT0256,CUST2905,ORD21871,Smartwatch,App Issue,Checkout page freezes for Smartwatch order.,Medium,Angry,Chat,Mumbai Warehouse,Technical Support,Open,No,Yes,2026-05-22 08:03:07
+TKT0257,CUST9861,ORD77041,Tablet,Order Delay,The delivery for my Tablet is delayed by several days.,Critical,Satisfied,Mobile App,Delhi Store,Logistics Team,Escalated,Yes,No,2026-05-11 11:03:07
+TKT0258,CUST9525,ORD10610,Bluetooth Speaker,Wrong Item,I received the wrong Bluetooth Speaker in my package.,Low,Angry,Phone,Hyderabad Hub,Technical Support,Escalated,Yes,Yes,2026-05-07 20:03:07
+TKT0259,CUST8260,ORD84679,Laptop Bag,App Issue,Retail website not responding during Laptop Bag purchase.,Low,Frustrated,Chat,Hyderabad Hub,Warehouse Operations,In Progress,Yes,Yes,2026-05-16 19:03:07
+TKT0260,CUST3795,ORD98050,Bluetooth Speaker,App Issue,Checkout page freezes for Bluetooth Speaker order.,Critical,Frustrated,Phone,Hyderabad Hub,Logistics Team,Escalated,No,Yes,2026-04-30 07:03:07
+TKT0261,CUST5002,ORD59119,Wireless Mouse,Damaged Item,The packaging for Wireless Mouse was damaged.,High,Angry,Email,Hyderabad Hub,Logistics Team,Open,No,No,2026-05-02 03:03:07
+TKT0262,CUST8153,ORD32625,Laptop Bag,Refund Issue,Refund for my Laptop Bag has not been credited.,Low,Satisfied,Chat,Mumbai Warehouse,Logistics Team,Open,No,Yes,2026-05-15 10:03:07
+TKT0263,CUST4381,ORD86106,Wireless Mouse,Payment Issue,Amount deducted for Wireless Mouse but no order confirmation received.,Critical,Angry,Mobile App,Bengaluru Hub,Technical Support,In Progress,No,Yes,2026-04-25 15:03:07
+TKT0264,CUST2416,ORD84844,Wireless Mouse,Damaged Item,The delivered Wireless Mouse is defective.,Critical,Satisfied,Mobile App,Mumbai Warehouse,Payment Support,In Progress,No,Yes,2026-04-25 17:03:07
+TKT0265,CUST2693,ORD92579,Jeans,Refund Issue,I returned the Jeans but refund is not processed.,Low,Neutral,Chat,Mumbai Warehouse,Technical Support,Open,Yes,No,2026-05-16 03:03:07
+TKT0266,CUST8881,ORD58318,Tablet,Payment Issue,Transaction completed but Tablet order was not placed.,Critical,Neutral,Phone,Delhi Store,Technical Support,Open,Yes,No,2026-05-16 10:03:07
+TKT0267,CUST9188,ORD60722,Jeans,App Issue,Checkout page freezes for Jeans order.,Critical,Angry,Phone,Mumbai Warehouse,Payment Support,Escalated,Yes,No,2026-05-12 11:03:07
+TKT0268,CUST9802,ORD56346,Jeans,Wrong Item,A different item was delivered instead of Jeans.,Low,Satisfied,Mobile App,Bengaluru Hub,Technical Support,Open,Yes,Yes,2026-05-05 16:03:07
+TKT0269,CUST4324,ORD81768,Wireless Mouse,Payment Issue,Transaction completed but Wireless Mouse order was not placed.,Low,Satisfied,Email,Chennai Store,Payment Support,Escalated,No,Yes,2026-05-18 23:03:07
+TKT0270,CUST9641,ORD89573,Mobile Charger,Cancellation Issue,I cancelled my Mobile Charger order but it is still active.,Critical,Angry,Phone,Chennai Store,Logistics Team,Open,Yes,Yes,2026-05-05 03:03:07
+TKT0271,CUST2539,ORD82907,Headphones,Wrong Item,A different item was delivered instead of Headphones.,Critical,Neutral,Phone,Mumbai Warehouse,Logistics Team,Escalated,Yes,Yes,2026-04-26 00:03:07
+TKT0272,CUST2984,ORD15381,Laptop Bag,Order Delay,The delivery for my Laptop Bag is delayed by several days.,Low,Angry,Phone,Bengaluru Hub,Logistics Team,Escalated,No,Yes,2026-05-07 23:03:07
+TKT0273,CUST6648,ORD32676,Headphones,Damaged Item,The delivered Headphones is defective.,Low,Satisfied,Chat,Mumbai Warehouse,Logistics Team,Open,Yes,Yes,2026-05-01 17:03:07
+TKT0274,CUST7844,ORD79430,Headphones,Order Delay,Shipment tracking for my Headphones has not updated.,Low,Frustrated,Mobile App,Chennai Store,Warehouse Operations,Resolved,No,No,2026-05-01 00:03:07
+TKT0275,CUST6432,ORD35600,Bluetooth Speaker,Refund Issue,Refund status for Bluetooth Speaker has not been updated.,Medium,Satisfied,Email,Mumbai Warehouse,Warehouse Operations,In Progress,No,Yes,2026-05-01 06:03:07
+TKT0276,CUST2442,ORD22707,Smartwatch,Payment Issue,Amount deducted for Smartwatch but no order confirmation received.,Medium,Frustrated,Chat,Chennai Store,Technical Support,Resolved,No,Yes,2026-05-03 16:03:07
+TKT0277,CUST4426,ORD12395,Mobile Charger,Payment Issue,Payment issue occurred during checkout for Mobile Charger.,Low,Angry,Phone,Bengaluru Hub,Warehouse Operations,Resolved,Yes,No,2026-05-21 10:03:07
+TKT0278,CUST4352,ORD38352,Jeans,Damaged Item,The Jeans arrived damaged and unusable.,Medium,Angry,Phone,Hyderabad Hub,Customer Support,In Progress,No,Yes,2026-05-09 20:03:07
+TKT0279,CUST6496,ORD10318,Headphones,Refund Issue,Refund status for Headphones has not been updated.,Critical,Neutral,Chat,Chennai Store,Technical Support,Open,Yes,No,2026-05-03 10:03:07
+TKT0280,CUST6945,ORD14585,Shoes,Order Delay,My order for Shoes has not been delivered yet.,Critical,Neutral,Mobile App,Hyderabad Hub,Customer Support,Open,Yes,Yes,2026-05-15 21:03:07
+TKT0281,CUST6085,ORD98466,Bluetooth Speaker,Stock Issue,Inventory issue occurred while purchasing Bluetooth Speaker.,Low,Angry,Phone,Bengaluru Hub,Customer Support,Resolved,Yes,Yes,2026-04-27 12:03:07
+TKT0282,CUST5917,ORD13815,Smartwatch,App Issue,Checkout page freezes for Smartwatch order.,Low,Satisfied,Mobile App,Bengaluru Hub,Customer Support,Escalated,No,Yes,2026-05-23 20:03:07
+TKT0283,CUST8692,ORD45528,Mobile Charger,Payment Issue,Payment issue occurred during checkout for Mobile Charger.,Low,Satisfied,Phone,Delhi Store,Technical Support,Resolved,No,No,2026-04-24 17:03:07
+TKT0284,CUST1289,ORD59127,Jeans,Payment Issue,Payment issue occurred during checkout for Jeans.,Medium,Frustrated,Email,Bengaluru Hub,Warehouse Operations,Escalated,No,Yes,2026-04-24 01:03:07
+TKT0285,CUST9671,ORD32138,Jeans,Stock Issue,Jeans was shown available but later became out of stock.,Medium,Satisfied,Phone,Chennai Store,Logistics Team,Resolved,Yes,No,2026-05-23 16:03:07
+TKT0286,CUST1943,ORD42561,Jeans,Stock Issue,Inventory issue occurred while purchasing Jeans.,Critical,Satisfied,Mobile App,Mumbai Warehouse,Warehouse Operations,Escalated,No,No,2026-04-29 08:03:07
+TKT0287,CUST3906,ORD36377,Tablet,Refund Issue,Refund for my Tablet has not been credited.,Low,Angry,Phone,Pune Warehouse,Customer Support,In Progress,Yes,No,2026-05-21 21:03:07
+TKT0288,CUST7668,ORD10813,Shoes,Refund Issue,Refund for my Shoes has not been credited.,Low,Satisfied,Phone,Pune Warehouse,Payment Support,Open,No,Yes,2026-05-04 19:03:07
+TKT0289,CUST8827,ORD49460,Bluetooth Speaker,Stock Issue,Inventory issue occurred while purchasing Bluetooth Speaker.,Critical,Satisfied,Mobile App,Pune Warehouse,Warehouse Operations,In Progress,No,Yes,2026-05-11 02:03:07
+TKT0290,CUST9327,ORD32648,Smartwatch,Wrong Item,The delivered Smartwatch does not match my order.,Critical,Angry,Phone,Delhi Store,Payment Support,In Progress,Yes,Yes,2026-05-02 16:03:07
+TKT0291,CUST5963,ORD88406,Laptop Bag,Stock Issue,Laptop Bag was shown available but later became out of stock.,Low,Satisfied,Email,Mumbai Warehouse,Technical Support,Resolved,No,Yes,2026-04-25 01:03:07
+TKT0292,CUST8374,ORD21777,Laptop Bag,Order Delay,The delivery for my Laptop Bag is delayed by several days.,Medium,Satisfied,Mobile App,Chennai Store,Technical Support,Open,No,Yes,2026-05-19 05:03:07
+TKT0293,CUST5479,ORD69719,Smartwatch,Wrong Item,I received the wrong Smartwatch in my package.,Medium,Frustrated,Chat,Chennai Store,Customer Support,Resolved,No,Yes,2026-05-08 21:03:07
+TKT0294,CUST5410,ORD98617,Shoes,Order Delay,Shipment tracking for my Shoes has not updated.,High,Frustrated,Chat,Pune Warehouse,Customer Support,Open,No,Yes,2026-04-28 23:03:07
+TKT0295,CUST4161,ORD37585,Tablet,Payment Issue,Payment issue occurred during checkout for Tablet.,Low,Satisfied,Phone,Bengaluru Hub,Payment Support,Escalated,Yes,Yes,2026-04-27 18:03:07
+TKT0296,CUST7395,ORD49658,Tablet,App Issue,Checkout page freezes for Tablet order.,Medium,Satisfied,Email,Mumbai Warehouse,Customer Support,In Progress,Yes,No,2026-04-30 12:03:07
+TKT0297,CUST5207,ORD77023,Backpack,Damaged Item,The packaging for Backpack was damaged.,High,Neutral,Email,Delhi Store,Technical Support,Escalated,Yes,Yes,2026-05-17 22:03:07
+TKT0298,CUST3150,ORD37378,Bluetooth Speaker,Damaged Item,The delivered Bluetooth Speaker is defective.,Critical,Frustrated,Mobile App,Hyderabad Hub,Warehouse Operations,Open,No,No,2026-04-28 02:03:07
+TKT0299,CUST8120,ORD42049,Bluetooth Speaker,App Issue,The app crashes while purchasing Bluetooth Speaker.,Critical,Neutral,Email,Bengaluru Hub,Logistics Team,Escalated,No,Yes,2026-04-26 11:03:07
+TKT0300,CUST1343,ORD70138,Jeans,Stock Issue,Inventory issue occurred while purchasing Jeans.,High,Frustrated,Mobile App,Bengaluru Hub,Logistics Team,In Progress,Yes,No,2026-05-24 05:03:07
